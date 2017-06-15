@@ -1,0 +1,21 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Wed Jun 07 08:08:18 2017
+# Process ID: 10024
+# Current directory: C:/CR/Projeto/Task_53/UserDefinedRepository/compVGA
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6904 C:\CR\Projeto\Task_53\UserDefinedRepository\compVGA\compVGA.xpr
+# Log file: C:/CR/Projeto/Task_53/UserDefinedRepository/compVGA/vivado.log
+# Journal file: C:/CR/Projeto/Task_53/UserDefinedRepository/compVGA\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/CR/Projeto/Task_53/UserDefinedRepository/compVGA/compVGA.xpr
+open_hw
+connect_hw_server
+open_hw_target
+current_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+reset_run synth_1

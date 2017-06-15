@@ -1,0 +1,21 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Mon Jun 05 14:20:51 2017
+# Process ID: 186356
+# Current directory: C:/Users/Henrique/Desktop/CR/IpIntegrators/Unroll
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent185464 C:\Users\Henrique\Desktop\CR\IpIntegrators\Unroll\Unroll.xpr
+# Log file: C:/Users/Henrique/Desktop/CR/IpIntegrators/Unroll/vivado.log
+# Journal file: C:/Users/Henrique/Desktop/CR/IpIntegrators/Unroll\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Henrique/Desktop/CR/IpIntegrators/Unroll/Unroll.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Henrique/Desktop/CR/IpIntegrators/Unroll/Unroll.srcs/sources_1/new'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.4/data/ip'.
+open_project: Time (s): cpu = 00:00:10 ; elapsed = 00:00:06 . Memory (MB): peak = 694.629 ; gain = 101.410
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Jun 05 14:35:40 2017...

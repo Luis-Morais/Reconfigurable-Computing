@@ -1,0 +1,105 @@
+{
+   guistr: "# # String gsaved with Nlview 6.6.5b  2016-09-06 bk=1.3687 VDI=39 GEI=35 GUI=JA:1.6
+#  -string -flagsOSRD
+preplace port HSync -pg 1 -y 690 -defaultsOSRD
+preplace port VSync -pg 1 -y 710 -defaultsOSRD
+preplace port btnC -pg 1 -y 440 -defaultsOSRD
+preplace port btnCpuReset -pg 1 -y 0 -defaultsOSRD
+preplace port clk -pg 1 -y -60 -defaultsOSRD
+preplace portBus VGAGreen -pg 1 -y 750 -defaultsOSRD
+preplace portBus sw -pg 1 -y 30 -defaultsOSRD -right
+preplace portBus an -pg 1 -y 150 -defaultsOSRD
+preplace portBus seg -pg 1 -y 170 -defaultsOSRD
+preplace portBus VGABlue -pg 1 -y 770 -defaultsOSRD
+preplace portBus VGARed -pg 1 -y 730 -defaultsOSRD
+preplace inst xlslice_0 -pg 1 -lvl 7 -y 150 -defaultsOSRD
+preplace inst EightDispControl_0 -pg 1 -lvl 9 -y 130 -defaultsOSRD
+preplace inst xlconstant_0 -pg 1 -lvl 6 -y -110 -defaultsOSRD
+preplace inst xlslice_1 -pg 1 -lvl 7 -y -30 -defaultsOSRD
+preplace inst xlslice_2 -pg 1 -lvl 7 -y -250 -defaultsOSRD
+preplace inst xlconstant_1 -pg 1 -lvl 8 -y 630 -defaultsOSRD
+preplace inst VGA_for_block_0 -pg 1 -lvl 9 -y 850 -defaultsOSRD
+preplace inst xlslice_3 -pg 1 -lvl 8 -y -440 -defaultsOSRD
+preplace inst xlconstant_2 -pg 1 -lvl 7 -y 50 -defaultsOSRD
+preplace inst microblaze_0_axi_periph -pg 1 -lvl 5 -y 120 -defaultsOSRD
+preplace inst FSM_max_common_divisor_0 -pg 1 -lvl 8 -y 400 -defaultsOSRD
+preplace inst xlconcat_0 -pg 1 -lvl 6 -y 10 -defaultsOSRD
+preplace inst xlslice_10 -pg 1 -lvl 8 -y 800 -defaultsOSRD
+preplace inst xlslice_4 -pg 1 -lvl 8 -y -360 -defaultsOSRD
+preplace inst xlconstant_3 -pg 1 -lvl 7 -y -160 -defaultsOSRD
+preplace inst axi_gpio_0 -pg 1 -lvl 6 -y 210 -defaultsOSRD
+preplace inst xlslice_11 -pg 1 -lvl 8 -y 720 -defaultsOSRD
+preplace inst xlslice_5 -pg 1 -lvl 8 -y -150 -defaultsOSRD
+preplace inst xlconcat_1 -pg 1 -lvl 8 -y -260 -defaultsOSRD
+preplace inst blk_mem_gen_0 -pg 1 -lvl 9 -y -110 -defaultsOSRD
+preplace inst xlslice_6 -pg 1 -lvl 8 -y 50 -defaultsOSRD
+preplace inst xlconcat_2 -pg 1 -lvl 8 -y -50 -defaultsOSRD
+preplace inst mdm_1 -pg 1 -lvl 3 -y 30 -defaultsOSRD
+preplace inst blk_mem_gen_1 -pg 1 -lvl 9 -y 410 -defaultsOSRD
+preplace inst xlslice_7 -pg 1 -lvl 8 -y 130 -defaultsOSRD
+preplace inst xlslice_8 -pg 1 -lvl 8 -y 210 -defaultsOSRD
+preplace inst microblaze_0 -pg 1 -lvl 4 -y -100 -defaultsOSRD
+preplace inst xlslice_9 -pg 1 -lvl 8 -y 290 -defaultsOSRD
+preplace inst rst_clk_wiz_1_100M -pg 1 -lvl 2 -y 10 -defaultsOSRD
+preplace inst clk_wiz_1 -pg 1 -lvl 1 -y -60 -defaultsOSRD
+preplace inst microblaze_0_local_memory -pg 1 -lvl 5 -y -90 -defaultsOSRD
+preplace inst unroll_0 -pg 1 -lvl 7 -y 290 -defaultsOSRD
+preplace netloc xlconstant_1_dout 1 8 1 1530
+preplace netloc microblaze_0_mdm_axi 1 2 4 -350J -180 NJ -180 NJ -180 670
+preplace netloc xlslice_9_Dout 1 8 1 1520
+preplace netloc xlslice_3_Dout 1 8 1 1560
+preplace netloc xlslice_4_Dout 1 8 1 1580
+preplace netloc EightDispControl_0_segments 1 9 1 1900
+preplace netloc xlslice_1_Dout 1 7 1 1290
+preplace netloc xlconstant_2_dout 1 7 1 1300
+preplace netloc blk_mem_gen_1_doutb 1 5 4 690 490 980 490 1290 490 NJ
+preplace netloc btnCpuReset_1 1 0 2 NJ 0 -730
+preplace netloc btnC_1 1 0 9 -970J 860 NJ 860 NJ 860 NJ 860 NJ 860 NJ 860 1010 860 1300J 860 NJ
+preplace netloc xlslice_7_Dout 1 8 1 1510
+preplace netloc xlslice_5_Dout 1 8 1 1520
+preplace netloc FSM_max_common_divisor_0_ret 1 8 1 1580
+preplace netloc xlconcat_1_dout 1 8 1 1530
+preplace netloc microblaze_0_ilmb_1 1 4 1 N
+preplace netloc xlslice_10_Dout 1 8 1 1510
+preplace netloc VGA_for_block_0_VSync 1 9 1 1910
+preplace netloc microblaze_0_axi_dp 1 4 1 400
+preplace netloc FSM_max_common_divisor_0_w_enable 1 8 1 1580
+preplace netloc unroll_0_data_out 1 7 1 1270
+preplace netloc VGA_for_block_0_VGAGreen 1 9 1 1930
+preplace netloc VGA_for_block_0_VGARed 1 9 1 1920
+preplace netloc axi_gpio_0_gpio_io_o 1 6 1 970
+preplace netloc xlconcat_0_dout 1 6 1 960
+preplace netloc xlconstant_0_dout 1 5 2 680 -160 980
+preplace netloc VGA_for_block_0_HSync 1 9 1 1900
+preplace netloc rst_clk_wiz_1_100M_interconnect_aresetn 1 2 3 -370J 100 NJ 100 390J
+preplace netloc rst_clk_wiz_1_100M_bus_struct_reset 1 2 3 -360J -40 -70J -10 390J
+preplace netloc microblaze_0_axi_periph_M01_AXI 1 5 1 680
+preplace netloc FSM_max_common_divisor_0_addr 1 8 1 1540
+preplace netloc clk_wiz_1_locked 1 1 1 -750
+preplace netloc xlslice_2_Dout 1 7 1 1260
+preplace netloc rst_clk_wiz_1_100M_peripheral_aresetn 1 2 4 -360J 120 NJ 120 400J 260 680J
+preplace netloc rst_clk_wiz_1_100M_mb_reset 1 2 2 -370J -70 NJ
+preplace netloc xlslice_11_Dout 1 8 1 1520
+preplace netloc clock_1 1 1 8 -740J 370 -350J 370 -60J 370 410J 370 670J 370 1000J 370 1280J 480 1550
+preplace netloc microblaze_0_dlmb_1 1 4 1 N
+preplace netloc axi_gpio_0_gpio2_io_o 1 6 2 990J 800 1310
+preplace netloc VGA_for_block_0_VGABlue 1 9 1 1940
+preplace netloc clock_2 1 0 1 N
+preplace netloc xlslice_8_Dout 1 8 1 1510
+preplace netloc sw_1 1 8 2 1590 -240 1940J
+preplace netloc Net1 1 6 3 1010 -490 1310 -490 1570J
+preplace netloc microblaze_0_debug 1 3 1 -80
+preplace netloc unroll_0_completed 1 7 1 1260
+preplace netloc xlconcat_2_dout 1 8 1 1520
+preplace netloc EightDispControl_0_select_display 1 9 1 1940
+preplace netloc mdm_1_debug_sys_rst 1 1 3 -730 110 NJ 110 -70
+preplace netloc xlslice_6_Dout 1 8 1 1510
+preplace netloc xlconstant_3_dout 1 7 1 1270
+preplace netloc xlslice_0_Dout 1 7 1 1280
+levelinfo -pg 1 -990 -830 -530 -210 170 540 830 1140 1410 1760 1960 -top -570 -bot 940
+",
+}
+{
+   da_board_cnt: "2",
+   da_mb_cnt: "1",
+}

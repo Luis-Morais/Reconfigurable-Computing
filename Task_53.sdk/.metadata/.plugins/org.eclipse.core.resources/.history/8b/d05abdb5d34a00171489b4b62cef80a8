@@ -1,0 +1,40 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include "platform.h"
+#include "xparameters.h"
+#include "xgpio.h"
+
+//declare an XGpio and XGpio instance
+XGpio GPIO_0;
+XGpio_Config GPIO_0_conf;
+
+int main() {
+	int number_words = 100;
+	int word = 0x00000000;
+
+	GPIO_0_conf.BaseAddress = XPAR_AXI_GPIO_0_BASEADDR;
+	GPIO_0_conf.DeviceId = XPAR_GPIO_0_DEVICE_ID;
+	GPIO_0_conf.IsDual = XPAR_GPIO_0_IS_DUAL;
+
+	//Initialize the XGpio instance
+	XGpio_CfgInitialize(&GPIO_0, &GPIO_0_conf, GPIO_0_conf.BaseAddress);
+	init_platform();
+
+	for(int i = 0; i < number_words; i++) {
+		word = word|array[i];
+		word = word|0x1000; //write enable
+		word = word|(i<<8);
+		putnum(word);
+		print("\n");
+
+		XGpio_DiscreteWrite(&GPIO, 1, word);
+		word=0x00000000;
+	}
+
+	word=0x00000000;
+	XGpio_DiscreteWrite(&GPIO, 1, word);
+
+	cleanup_platform();
+
+	return 0;
+}

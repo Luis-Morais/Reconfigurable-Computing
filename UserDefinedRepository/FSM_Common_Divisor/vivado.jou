@@ -1,0 +1,19 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Wed Jun 07 14:26:31 2017
+# Process ID: 9876
+# Current directory: C:/CR/Projeto/Task_53/UserDefinedRepository/FSM_Common_Divisor
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent3328 C:\CR\Projeto\Task_53\UserDefinedRepository\FSM_Common_Divisor\FSM_Common_Divisor.xpr
+# Log file: C:/CR/Projeto/Task_53/UserDefinedRepository/FSM_Common_Divisor/vivado.log
+# Journal file: C:/CR/Projeto/Task_53/UserDefinedRepository/FSM_Common_Divisor\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/CR/Projeto/Task_53/UserDefinedRepository/FSM_Common_Divisor/FSM_Common_Divisor.xpr
+reset_run synth_1
+launch_runs synth_1
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1
+wait_on_run synth_1

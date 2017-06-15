@@ -1,0 +1,384 @@
+
+*** Running vivado
+    with args -log VGA_for_block.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source VGA_for_block.tcl
+
+
+****** Vivado v2016.4 (64-bit)
+  **** SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+  **** IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source VGA_for_block.tcl -notrace
+Command: synth_design -top VGA_for_block -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 6548 
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 281.926 ; gain = 71.801
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'VGA_for_block' [C:/CR/Projeto/Task_53/UserDefinedRepository/compVGA/compVGA.srcs/sources_1/imports/ZedBoardSorter4/TopLevelVGA.vhd:20]
+INFO: [Synth 8-638] synthesizing module 'clock_div' [C:/CR/Projeto/Task_53/UserDefinedRepository/compVGA/compVGA.srcs/sources_1/imports/ZedBoardSorter4/Clock_divider.vhd:12]
+	Parameter how_fast bound to: 0 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'clock_div' (1#1) [C:/CR/Projeto/Task_53/UserDefinedRepository/compVGA/compVGA.srcs/sources_1/imports/ZedBoardSorter4/Clock_divider.vhd:12]
+INFO: [Synth 8-638] synthesizing module 'VGASync' [C:/CR/Projeto/Task_53/UserDefinedRepository/compVGA/compVGA.srcs/sources_1/imports/ZedBoardSorter4/VGASync.vhd:19]
+	Parameter PixelXBits bound to: 11 - type: integer 
+	Parameter PixelYBits bound to: 10 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'VGASync' (2#1) [C:/CR/Projeto/Task_53/UserDefinedRepository/compVGA/compVGA.srcs/sources_1/imports/ZedBoardSorter4/VGASync.vhd:19]
+INFO: [Synth 8-638] synthesizing module 'RAM' [C:/CR/Projeto/Task_53/UserDefinedRepository/compVGA/compVGA.srcs/sources_1/imports/ZedBoardSorter4/RAM.vhd:17]
+	Parameter AddressBits bound to: 13 - type: integer 
+	Parameter DataBits bound to: 8 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'RAM' (3#1) [C:/CR/Projeto/Task_53/UserDefinedRepository/compVGA/compVGA.srcs/sources_1/imports/ZedBoardSorter4/RAM.vhd:17]
+INFO: [Synth 8-638] synthesizing module 'SymbolROM' [C:/CR/Projeto/Task_53/UserDefinedRepository/compVGA/compVGA.srcs/sources_1/imports/ZedBoardSorter4/SymbolROM.vhdl:13]
+INFO: [Synth 8-256] done synthesizing module 'SymbolROM' (4#1) [C:/CR/Projeto/Task_53/UserDefinedRepository/compVGA/compVGA.srcs/sources_1/imports/ZedBoardSorter4/SymbolROM.vhdl:13]
+INFO: [Synth 8-638] synthesizing module 'VGATileMatrix' [C:/CR/Projeto/Task_53/UserDefinedRepository/compVGA/compVGA.srcs/sources_1/imports/ZedBoardSorter4/VGATileMatrix.vhd:24]
+	Parameter PixelXBits bound to: 11 - type: integer 
+	Parameter PixelYBits bound to: 10 - type: integer 
+	Parameter AddressBits bound to: 13 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'VGATileMatrix' (5#1) [C:/CR/Projeto/Task_53/UserDefinedRepository/compVGA/compVGA.srcs/sources_1/imports/ZedBoardSorter4/VGATileMatrix.vhd:24]
+INFO: [Synth 8-638] synthesizing module 'RGBMux' [C:/CR/Projeto/Task_53/UserDefinedRepository/compVGA/compVGA.srcs/sources_1/imports/ZedBoardSorter4/RGBMux.vhd:20]
+	Parameter RedBits bound to: 4 - type: integer 
+	Parameter GreenBits bound to: 4 - type: integer 
+	Parameter BlueBits bound to: 4 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'RGBMux' (6#1) [C:/CR/Projeto/Task_53/UserDefinedRepository/compVGA/compVGA.srcs/sources_1/imports/ZedBoardSorter4/RGBMux.vhd:20]
+INFO: [Synth 8-256] done synthesizing module 'VGA_for_block' (7#1) [C:/CR/Projeto/Task_53/UserDefinedRepository/compVGA/compVGA.srcs/sources_1/imports/ZedBoardSorter4/TopLevelVGA.vhd:20]
+WARNING: [Synth 8-3331] design SymbolROM has unconnected port SymbolPos[7]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 319.426 ; gain = 109.301
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 319.426 ; gain = 109.301
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 319.426 ; gain = 109.301
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Synth 8-5546] ROM "VCount" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "MatrixCol" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "MatrixRow" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 369.031 ; gain = 158.906
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
+	   2 Input      1 Bit       Adders := 1     
++---Registers : 
+	               11 Bit    Registers := 2     
+	               10 Bit    Registers := 2     
+	                8 Bit    Registers := 2     
+	                7 Bit    Registers := 1     
+	                6 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---RAMs : 
+	              64K Bit         RAMs := 1     
++---Muxes : 
+	   2 Input     11 Bit        Muxes := 1     
+	   5 Input      8 Bit        Muxes := 1     
+	 127 Input      8 Bit        Muxes := 4     
+	   6 Input      8 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 2     
+	 127 Input      3 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module clock_div 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      1 Bit       Adders := 1     
++---Registers : 
+	                1 Bit    Registers := 1     
+Module VGASync 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 1     
++---Registers : 
+	               11 Bit    Registers := 2     
+	               10 Bit    Registers := 2     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     11 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module RAM 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
++---RAMs : 
+	              64K Bit         RAMs := 1     
+Module SymbolROM 
+Detailed RTL Component Info : 
++---Muxes : 
+	   5 Input      8 Bit        Muxes := 1     
+	 127 Input      8 Bit        Muxes := 4     
+	   6 Input      8 Bit        Muxes := 1     
+	 127 Input      3 Bit        Muxes := 2     
+Module VGATileMatrix 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      7 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
+	                7 Bit    Registers := 1     
+	                6 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 2     
+	   3 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "VGA_Synchronization/VCount" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-3917] design VGA_for_block has port VGABlue[3] driven by constant 1
+WARNING: [Synth 8-3917] design VGA_for_block has port VGABlue[2] driven by constant 1
+WARNING: [Synth 8-3917] design VGA_for_block has port VGABlue[1] driven by constant 1
+WARNING: [Synth 8-3917] design VGA_for_block has port VGABlue[0] driven by constant 1
+WARNING: [Synth 8-3936] Found unconnected internal register 'VGA_RAM/DataOut_reg' and it is trimmed from '8' to '7' bits. [C:/CR/Projeto/Task_53/UserDefinedRepository/compVGA/compVGA.srcs/sources_1/imports/ZedBoardSorter4/RAM.vhd:30]
+INFO: [Synth 8-4652] Swapped enable and write-enable on 2 RAM instances of RAM VGA_RAM/Memory_reg to conserve power
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 473.039 ; gain = 262.914
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++--------------+--------------------------+---------------+----------------+
+|Module Name   | RTL Object               | Depth x Width | Implemented As | 
++--------------+--------------------------+---------------+----------------+
+|SymbolROM     | PixelMap[0,4]            | 128x8         | LUT            | 
+|SymbolROM     | PixelMap[0,5]            | 128x8         | LUT            | 
+|SymbolROM     | PixelMap[0,6]            | 128x8         | LUT            | 
+|SymbolROM     | PixelMap[0,7]            | 128x8         | LUT            | 
+|SymbolROM     | PixelMap[0,8]            | 128x8         | LUT            | 
+|SymbolROM     | PixelMap[0,9]            | 128x8         | LUT            | 
+|VGA_for_block | Symbol_ROM/PixelMap[0,4] | 128x8         | LUT            | 
+|VGA_for_block | Symbol_ROM/PixelMap[0,5] | 128x8         | LUT            | 
+|VGA_for_block | Symbol_ROM/PixelMap[0,6] | 128x8         | LUT            | 
+|VGA_for_block | Symbol_ROM/PixelMap[0,7] | 128x8         | LUT            | 
+|VGA_for_block | Symbol_ROM/PixelMap[0,8] | 128x8         | LUT            | 
+|VGA_for_block | Symbol_ROM/PixelMap[0,9] | 128x8         | LUT            | 
++--------------+--------------------------+---------------+----------------+
+
+
+Block RAM: Preliminary Mapping  Report (see note below)
++------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name | RTL Object | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|RAM         | Memory_reg | 8 K x 8(READ_FIRST)    | W |   | 8 K x 8(WRITE_FIRST)   |   | R | Port A and B     | 0      | 2      | 
++------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 473.039 ; gain = 262.914
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4480] The timing for the instance VGA_RAM/Memory_reg_0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance VGA_RAM/Memory_reg_1 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 473.039 ; gain = 262.914
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 473.039 ; gain = 262.914
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 473.039 ; gain = 262.914
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 473.039 ; gain = 262.914
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 473.039 ; gain = 262.914
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 473.039 ; gain = 262.914
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 473.039 ; gain = 262.914
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |BUFG     |     2|
+|2     |CARRY4   |     5|
+|3     |LUT1     |    11|
+|4     |LUT2     |    21|
+|5     |LUT3     |    15|
+|6     |LUT4     |    17|
+|7     |LUT5     |    36|
+|8     |LUT6     |   203|
+|9     |MUXF7    |    67|
+|10    |MUXF8    |    22|
+|11    |RAMB36E1 |     2|
+|12    |FDCE     |    72|
+|13    |FDRE     |     2|
+|14    |IBUF     |    23|
+|15    |OBUF     |    14|
++------+---------+------+
+
+Report Instance Areas: 
++------+----------------------+--------------+------+
+|      |Instance              |Module        |Cells |
++------+----------------------+--------------+------+
+|1     |top                   |              |   512|
+|2     |  Symbol_ROM          |SymbolROM     |    42|
+|3     |  VGA_RAM             |RAM           |   237|
+|4     |  VGA_Synchronization |VGASync       |   101|
+|5     |  VGA_Tile_Matrix     |VGATileMatrix |    89|
+|6     |  divider             |clock_div     |     4|
++------+----------------------+--------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 473.039 ; gain = 262.914
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 6 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 473.039 ; gain = 262.914
+Synthesis Optimization Complete : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 473.039 ; gain = 262.914
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 30 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+38 Infos, 6 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 547.258 ; gain = 337.133
+INFO: [Common 17-1381] The checkpoint 'C:/CR/Projeto/Task_53/UserDefinedRepository/compVGA/compVGA.runs/synth_1/VGA_for_block.dcp' has been generated.
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.025 . Memory (MB): peak = 547.258 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Wed Jun 07 14:12:45 2017...

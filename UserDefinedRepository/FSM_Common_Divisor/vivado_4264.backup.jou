@@ -1,0 +1,22 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Wed Jun 07 06:57:35 2017
+# Process ID: 4264
+# Current directory: C:/CR/Projeto/Task_53/UserDefinedRepository/FSM_Common_Divisor
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9276 C:\CR\Projeto\Task_53\UserDefinedRepository\FSM_Common_Divisor\FSM_Common_Divisor.xpr
+# Log file: C:/CR/Projeto/Task_53/UserDefinedRepository/FSM_Common_Divisor/vivado.log
+# Journal file: C:/CR/Projeto/Task_53/UserDefinedRepository/FSM_Common_Divisor\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/CR/Projeto/Task_53/UserDefinedRepository/FSM_Common_Divisor/FSM_Common_Divisor.xpr
+remove_files  C:/CR/Projeto/Task_53/UserDefinedRepository/FSM_Common_Divisor/FSM_Common_Divisor.srcs/sources_1/new/FSM_Common_Divisor.vhd
+file delete -force C:/CR/Projeto/Task_53/UserDefinedRepository/FSM_Common_Divisor/FSM_Common_Divisor.srcs/sources_1/new/FSM_Common_Divisor.vhd
+file mkdir C:/CR/Projeto/Task_53/UserDefinedRepository/FSM_Common_Divisor/FSM_Common_Divisor.srcs/sources_1/new
+close [ open C:/CR/Projeto/Task_53/UserDefinedRepository/FSM_Common_Divisor/FSM_Common_Divisor.srcs/sources_1/new/FSM_Common_Divisor.vhd w ]
+add_files C:/CR/Projeto/Task_53/UserDefinedRepository/FSM_Common_Divisor/FSM_Common_Divisor.srcs/sources_1/new/FSM_Common_Divisor.vhd
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1

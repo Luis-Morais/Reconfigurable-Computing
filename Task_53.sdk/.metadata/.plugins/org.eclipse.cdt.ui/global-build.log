@@ -1,0 +1,2202 @@
+11:52:37 **** Build of project task_53_bsp ****
+make -k all 
+"Running Make include in microblaze_0/libsrc/bram_v4_1/src"
+make -C microblaze_0/libsrc/bram_v4_1/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in microblaze_0/libsrc/cpu_v2_5/src"
+make -C microblaze_0/libsrc/cpu_v2_5/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in microblaze_0/libsrc/gpio_v4_3/src"
+make -C microblaze_0/libsrc/gpio_v4_3/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in microblaze_0/libsrc/standalone_v6_1/src"
+make -C microblaze_0/libsrc/standalone_v6_1/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in microblaze_0/libsrc/uartlite_v3_2/src"
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make libs in microblaze_0/libsrc/bram_v4_1/src"
+make -C microblaze_0/libsrc/bram_v4_1/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling bram"
+mb-ar: creating ../../../lib/libxil.a
+"Running Make libs in microblaze_0/libsrc/cpu_v2_5/src"
+make -C microblaze_0/libsrc/cpu_v2_5/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling cpu"
+"Running Make libs in microblaze_0/libsrc/gpio_v4_3/src"
+make -C microblaze_0/libsrc/gpio_v4_3/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling gpio"
+"Running Make libs in microblaze_0/libsrc/standalone_v6_1/src"
+make -C microblaze_0/libsrc/standalone_v6_1/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling standalone";
+"Running Make libs in microblaze_0/libsrc/uartlite_v3_2/src"
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling uartlite"
+'Finished building libraries'
+11:52:44 **** Build of configuration Debug for project task_53 ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../task_53_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -I../../task_53_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: task_53.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../task_53_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -o "task_53.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: task_53.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size task_53.elf  |tee "task_53.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   2852	    292	   3128	   6272	   1880	task_53.elf
+'Finished building: task_53.elf.size'
+' '
+11:54:43 **** Auto Build of configuration Debug for project task_53 ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../task_53_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: task_53.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../task_53_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -o "task_53.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: task_53.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size task_53.elf  |tee "task_53.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   2940	    292	   3128	   6360	   18d8	task_53.elf
+'Finished building: task_53.elf.size'
+' '
+11:54:48 **** Auto Build of configuration Debug for project task_53 ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../task_53_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: task_53.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../task_53_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -o "task_53.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: task_53.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size task_53.elf  |tee "task_53.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   2940	    292	   3128	   6360	   18d8	task_53.elf
+'Finished building: task_53.elf.size'
+' '
+12:00:48 **** Auto Build of configuration Debug for project task_53 ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../task_53_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:69:6: error: 'intk' undeclared (first use in this function)
+  for(intk=0; k<32; k++) {
+      ^
+../src/helloworld.c:69:6: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c:69:14: error: 'k' undeclared (first use in this function)
+  for(intk=0; k<32; k++) {
+              ^
+../src/helloworld.c:73:3: warning: implicit declaration of function 'MB_Sleep' [-Wimplicit-function-declaration]
+   MB_Sleep(300);
+   ^
+make: ** [src/helloworld.o] Erro 1
+12:00:56 **** Auto Build of configuration Debug for project task_53 ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../task_53_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:73:3: warning: implicit declaration of function 'MB_Sleep' [-Wimplicit-function-declaration]
+   MB_Sleep(300);
+   ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: task_53.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../task_53_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -o "task_53.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: task_53.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size task_53.elf  |tee "task_53.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   4328	    292	   3156	   7776	   1e60	task_53.elf
+'Finished building: task_53.elf.size'
+' '
+12:02:07 **** Auto Build of configuration Debug for project task_53 ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../task_53_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:26:3: warning: implicit declaration of function 'MB_Sleep' [-Wimplicit-function-declaration]
+   MB_Sleep(300);
+   ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: task_53.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../task_53_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -o "task_53.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: task_53.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size task_53.elf  |tee "task_53.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   4328	    292	   3156	   7776	   1e60	task_53.elf
+'Finished building: task_53.elf.size'
+' '
+12:03:11 **** Clean-only build of configuration Debug for project task_53 ****
+make clean 
+rm -rf  ./src/helloworld.o ./src/platform.o  ./src/helloworld.d ./src/platform.d  task_53.elf.size  task_53.elf
+' '
+12:03:11 **** Auto Build of configuration Debug for project task_53 ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../task_53_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:26:3: warning: implicit declaration of function 'MB_Sleep' [-Wimplicit-function-declaration]
+   MB_Sleep(300);
+   ^
+'Finished building: ../src/main.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -I../../task_53_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: task_53.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../task_53_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -o "task_53.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: task_53.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size task_53.elf  |tee "task_53.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   4328	    292	   3156	   7776	   1e60	task_53.elf
+'Finished building: task_53.elf.size'
+' '
+15:44:21 **** Clean-only build of project task_53_bsp ****
+make -k clean 
+rm -f microblaze_0/lib/libxil.a
+15:44:22 **** Clean-only build of configuration Debug for project task_53 ****
+make clean 
+rm -rf  ./src/main.o ./src/platform.o  ./src/main.d ./src/platform.d  task_53.elf.size  task_53.elf
+' '
+15:44:22 **** Build of project task_53_bsp ****
+make -k all 
+"Running Make include in microblaze_0/libsrc/bram_v4_1/src"
+make -C microblaze_0/libsrc/bram_v4_1/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in microblaze_0/libsrc/cpu_v2_5/src"
+make -C microblaze_0/libsrc/cpu_v2_5/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in microblaze_0/libsrc/gpio_v4_3/src"
+make -C microblaze_0/libsrc/gpio_v4_3/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in microblaze_0/libsrc/standalone_v6_1/src"
+make -C microblaze_0/libsrc/standalone_v6_1/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in microblaze_0/libsrc/uartlite_v3_2/src"
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make libs in microblaze_0/libsrc/bram_v4_1/src"
+make -C microblaze_0/libsrc/bram_v4_1/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling bram"
+mb-ar: creating ../../../lib/libxil.a
+"Running Make libs in microblaze_0/libsrc/cpu_v2_5/src"
+make -C microblaze_0/libsrc/cpu_v2_5/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling cpu"
+"Running Make libs in microblaze_0/libsrc/gpio_v4_3/src"
+make -C microblaze_0/libsrc/gpio_v4_3/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling gpio"
+"Running Make libs in microblaze_0/libsrc/standalone_v6_1/src"
+make -C microblaze_0/libsrc/standalone_v6_1/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling standalone";
+"Running Make libs in microblaze_0/libsrc/uartlite_v3_2/src"
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling uartlite"
+'Finished building libraries'
+15:44:28 **** Build of configuration Debug for project task_53 ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../task_53_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:26:3: warning: implicit declaration of function 'MB_Sleep' [-Wimplicit-function-declaration]
+   MB_Sleep(300);
+   ^
+'Finished building: ../src/main.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -I../../task_53_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: task_53.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../task_53_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -o "task_53.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: task_53.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size task_53.elf  |tee "task_53.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   4328	    292	   3156	   7776	   1e60	task_53.elf
+'Finished building: task_53.elf.size'
+' '
+15:53:36 **** Clean-only build of configuration Debug for project task_53 ****
+make clean 
+rm -rf  ./src/main.o ./src/platform.o  ./src/main.d ./src/platform.d  task_53.elf.size  task_53.elf
+' '
+15:53:37 **** Incremental Build of configuration Debug for project task_53 ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../task_53_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:26:3: warning: implicit declaration of function 'MB_Sleep' [-Wimplicit-function-declaration]
+   MB_Sleep(300);
+   ^
+'Finished building: ../src/main.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -I../../task_53_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: task_53.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../task_53_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -o "task_53.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: task_53.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size task_53.elf  |tee "task_53.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   4328	    292	   3156	   7776	   1e60	task_53.elf
+'Finished building: task_53.elf.size'
+' '
+15:53:39 **** Incremental Build of configuration Debug for project task_53 ****
+make all 
+make: Nada a ser feito para `all'.
+15:54:15 **** Incremental Build of configuration Debug for project task_53 ****
+make all 
+make: Nada a ser feito para `all'.
+15:55:12 **** Incremental Build of configuration Debug for project task_53 ****
+make all 
+make: Nada a ser feito para `all'.
+15:55:16 **** Incremental Build of configuration Debug for project task_53 ****
+make all 
+make: Nada a ser feito para `all'.
+15:55:49 **** Incremental Build of configuration Debug for project task_53 ****
+make all 
+make: Nada a ser feito para `all'.
+15:56:57 **** Incremental Build of configuration Debug for project task_53 ****
+make all 
+make: Nada a ser feito para `all'.
+15:57:05 **** Incremental Build of configuration Debug for project task_53 ****
+make all 
+make: Nada a ser feito para `all'.
+16:08:55 **** Incremental Build of configuration Debug for project task_53 ****
+make all 
+make: Nada a ser feito para `all'.
+17:16:44 **** Auto Build of configuration Debug for project task_53 ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../task_53_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:24:13: error: 'array' undeclared (first use in this function)
+   word=word|array[i];
+             ^
+../src/main.c:24:13: note: each undeclared identifier is reported only once for each function it appears in
+../src/main.c:24:19: error: 'i' undeclared (first use in this function)
+   word=word|array[i];
+                   ^
+../src/main.c:30:24: error: 'GPIO' undeclared (first use in this function)
+   XGpio_DiscreteWrite(&GPIO, 1, word);
+                        ^
+make: ** [src/main.o] Erro 1
+17:17:02 **** Auto Build of configuration Debug for project task_53 ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../task_53_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:24:15: error: 'array' undeclared (first use in this function)
+   word = word|array[i];
+               ^
+../src/main.c:24:15: note: each undeclared identifier is reported only once for each function it appears in
+../src/main.c:24:21: error: 'i' undeclared (first use in this function)
+   word = word|array[i];
+                     ^
+../src/main.c:30:24: error: 'GPIO' undeclared (first use in this function)
+   XGpio_DiscreteWrite(&GPIO, 1, word);
+                        ^
+make: ** [src/main.o] Erro 1
+17:17:14 **** Auto Build of configuration Debug for project task_53 ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../task_53_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:24:15: error: 'array' undeclared (first use in this function)
+   word = word|array[i];
+               ^
+../src/main.c:24:15: note: each undeclared identifier is reported only once for each function it appears in
+../src/main.c:30:24: error: 'GPIO' undeclared (first use in this function)
+   XGpio_DiscreteWrite(&GPIO, 1, word);
+                        ^
+make: ** [src/main.o] Erro 1
+17:18:00 **** Auto Build of configuration Debug for project task_53 ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../task_53_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:33:24: error: 'GPIO' undeclared (first use in this function)
+   XGpio_DiscreteWrite(&GPIO, 1, word);
+                        ^
+../src/main.c:33:24: note: each undeclared identifier is reported only once for each function it appears in
+make: ** [src/main.o] Erro 1
+17:18:19 **** Auto Build of configuration Debug for project task_53 ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../task_53_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: task_53.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../task_53_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -o "task_53.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: task_53.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size task_53.elf  |tee "task_53.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   4724	    292	   3160	   8176	   1ff0	task_53.elf
+'Finished building: task_53.elf.size'
+' '
+17:18:34 **** Auto Build of configuration Debug for project task_53 ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../task_53_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: task_53.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../task_53_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -o "task_53.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: task_53.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size task_53.elf  |tee "task_53.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   4724	    292	   3160	   8176	   1ff0	task_53.elf
+'Finished building: task_53.elf.size'
+' '
+22:26:04 **** Clean-only build of project task_53_bsp ****
+make -k clean 
+rm -f microblaze_0/lib/libxil.a
+22:26:05 **** Clean-only build of configuration Debug for project task_53 ****
+make clean 
+rm -rf  ./src/main.o ./src/platform.o  ./src/main.d ./src/platform.d  task_53.elf.size  task_53.elf
+' '
+22:26:05 **** Build of project task_53_bsp ****
+make -k all 
+"Running Make include in microblaze_0/libsrc/bram_v4_1/src"
+make -C microblaze_0/libsrc/bram_v4_1/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in microblaze_0/libsrc/cpu_v2_5/src"
+make -C microblaze_0/libsrc/cpu_v2_5/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in microblaze_0/libsrc/gpio_v4_3/src"
+make -C microblaze_0/libsrc/gpio_v4_3/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in microblaze_0/libsrc/standalone_v6_1/src"
+make -C microblaze_0/libsrc/standalone_v6_1/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in microblaze_0/libsrc/uartlite_v3_2/src"
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make libs in microblaze_0/libsrc/bram_v4_1/src"
+make -C microblaze_0/libsrc/bram_v4_1/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling bram"
+mb-ar: creating ../../../lib/libxil.a
+"Running Make libs in microblaze_0/libsrc/cpu_v2_5/src"
+make -C microblaze_0/libsrc/cpu_v2_5/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling cpu"
+"Running Make libs in microblaze_0/libsrc/gpio_v4_3/src"
+make -C microblaze_0/libsrc/gpio_v4_3/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling gpio"
+"Running Make libs in microblaze_0/libsrc/standalone_v6_1/src"
+make -C microblaze_0/libsrc/standalone_v6_1/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling standalone";
+"Running Make libs in microblaze_0/libsrc/uartlite_v3_2/src"
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling uartlite"
+'Finished building libraries'
+22:26:11 **** Build of configuration Debug for project task_53 ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../task_53_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -I../../task_53_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: task_53.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../task_53_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -o "task_53.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: task_53.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size task_53.elf  |tee "task_53.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   4724	    292	   3160	   8176	   1ff0	task_53.elf
+'Finished building: task_53.elf.size'
+' '
+22:28:15 **** Auto Build of configuration Debug for project task_53 ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../task_53_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: task_53.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../task_53_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -o "task_53.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: task_53.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size task_53.elf  |tee "task_53.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   5272	    292	   3156	   8720	   2210	task_53.elf
+'Finished building: task_53.elf.size'
+' '
+22:30:09 **** Auto Build of configuration Debug for project task_53 ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../task_53_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: task_53.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../task_53_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -o "task_53.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: task_53.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size task_53.elf  |tee "task_53.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   5280	    292	   3156	   8728	   2218	task_53.elf
+'Finished building: task_53.elf.size'
+' '
+22:31:34 **** Incremental Build of configuration Debug for project task_53 ****
+make all 
+make: Nada a ser feito para `all'.
+22:32:40 **** Incremental Build of configuration Debug for project task_53 ****
+make all 
+make: Nada a ser feito para `all'.
+22:33:35 **** Incremental Build of configuration Debug for project task_53 ****
+make all 
+make: Nada a ser feito para `all'.
+23:57:59 **** Incremental Build of configuration Debug for project task_53 ****
+make all 
+make: Nada a ser feito para `all'.
+23:58:07 **** Incremental Build of configuration Debug for project task_53 ****
+make all 
+make: Nada a ser feito para `all'.
+23:58:40 **** Incremental Build of configuration Debug for project task_53 ****
+make all 
+make: Nada a ser feito para `all'.
+00:19:02 **** Clean-only build of project task_53_bsp ****
+make -k clean 
+rm -f microblaze_0/lib/libxil.a
+00:19:03 **** Clean-only build of configuration Debug for project task_53 ****
+make clean 
+rm -rf  ./src/main.o ./src/platform.o  ./src/main.d ./src/platform.d  task_53.elf.size  task_53.elf
+' '
+00:19:03 **** Build of project task_53_bsp ****
+make -k all 
+"Running Make include in microblaze_0/libsrc/bram_v4_1/src"
+make -C microblaze_0/libsrc/bram_v4_1/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in microblaze_0/libsrc/cpu_v2_5/src"
+make -C microblaze_0/libsrc/cpu_v2_5/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in microblaze_0/libsrc/gpio_v4_3/src"
+make -C microblaze_0/libsrc/gpio_v4_3/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in microblaze_0/libsrc/standalone_v6_1/src"
+make -C microblaze_0/libsrc/standalone_v6_1/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in microblaze_0/libsrc/uartlite_v3_2/src"
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make libs in microblaze_0/libsrc/bram_v4_1/src"
+make -C microblaze_0/libsrc/bram_v4_1/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling bram"
+mb-ar: creating ../../../lib/libxil.a
+"Running Make libs in microblaze_0/libsrc/cpu_v2_5/src"
+make -C microblaze_0/libsrc/cpu_v2_5/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling cpu"
+"Running Make libs in microblaze_0/libsrc/gpio_v4_3/src"
+make -C microblaze_0/libsrc/gpio_v4_3/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling gpio"
+"Running Make libs in microblaze_0/libsrc/standalone_v6_1/src"
+make -C microblaze_0/libsrc/standalone_v6_1/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling standalone";
+"Running Make libs in microblaze_0/libsrc/uartlite_v3_2/src"
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling uartlite"
+'Finished building libraries'
+00:19:09 **** Build of configuration Debug for project task_53 ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../task_53_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -I../../task_53_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: task_53.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../task_53_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -o "task_53.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: task_53.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size task_53.elf  |tee "task_53.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   5280	    292	   3156	   8728	   2218	task_53.elf
+'Finished building: task_53.elf.size'
+' '
+00:20:57 **** Incremental Build of configuration Debug for project task_53 ****
+make all 
+make: Nada a ser feito para `all'.
+00:47:09 **** Clean-only build of project task_53_bsp ****
+make -k clean 
+rm -f microblaze_0/lib/libxil.a
+00:47:09 **** Clean-only build of configuration Debug for project task_53 ****
+make clean 
+rm -rf  ./src/main.o ./src/platform.o  ./src/main.d ./src/platform.d  task_53.elf.size  task_53.elf
+' '
+00:47:09 **** Build of project task_53_bsp ****
+make -k all 
+"Running Make include in microblaze_0/libsrc/bram_v4_1/src"
+make -C microblaze_0/libsrc/bram_v4_1/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in microblaze_0/libsrc/cpu_v2_5/src"
+make -C microblaze_0/libsrc/cpu_v2_5/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in microblaze_0/libsrc/gpio_v4_3/src"
+make -C microblaze_0/libsrc/gpio_v4_3/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in microblaze_0/libsrc/standalone_v6_1/src"
+make -C microblaze_0/libsrc/standalone_v6_1/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in microblaze_0/libsrc/uartlite_v3_2/src"
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make libs in microblaze_0/libsrc/bram_v4_1/src"
+make -C microblaze_0/libsrc/bram_v4_1/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling bram"
+mb-ar: creating ../../../lib/libxil.a
+"Running Make libs in microblaze_0/libsrc/cpu_v2_5/src"
+make -C microblaze_0/libsrc/cpu_v2_5/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling cpu"
+"Running Make libs in microblaze_0/libsrc/gpio_v4_3/src"
+make -C microblaze_0/libsrc/gpio_v4_3/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling gpio"
+"Running Make libs in microblaze_0/libsrc/standalone_v6_1/src"
+make -C microblaze_0/libsrc/standalone_v6_1/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling standalone";
+"Running Make libs in microblaze_0/libsrc/uartlite_v3_2/src"
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling uartlite"
+'Finished building libraries'
+00:47:16 **** Build of configuration Debug for project task_53 ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../task_53_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -I../../task_53_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: task_53.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../task_53_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -o "task_53.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: task_53.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size task_53.elf  |tee "task_53.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   5276	    292	   3160	   8728	   2218	task_53.elf
+'Finished building: task_53.elf.size'
+' '
+00:50:11 **** Incremental Build of configuration Debug for project task_53 ****
+make all 
+make: Nada a ser feito para `all'.
+00:54:45 **** Auto Build of configuration Debug for project task_53 ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../task_53_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:16:6: warning: unused variable 'array' [-Wunused-variable]
+  int array[]={0x13b, 0x1c5, 0x251, 0x267, 0x286, 0x2b7, 0x2a9, 0x29a, 0x26c,
+      ^
+../src/main.c:13:6: warning: unused variable 'word' [-Wunused-variable]
+  int word = 0x00000000;
+      ^
+../src/main.c:12:6: warning: unused variable 'number_words' [-Wunused-variable]
+  int number_words = 100;
+      ^
+'Finished building: ../src/main.c'
+' '
+'Building target: task_53.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../task_53_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -o "task_53.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: task_53.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size task_53.elf  |tee "task_53.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   4720	    292	   3156	   8168	   1fe8	task_53.elf
+'Finished building: task_53.elf.size'
+' '
+00:54:48 **** Incremental Build of configuration Debug for project task_53 ****
+make all 
+make: Nada a ser feito para `all'.
+00:57:37 **** Incremental Build of configuration Debug for project task_53 ****
+make all 
+make: Nada a ser feito para `all'.
+00:58:38 **** Incremental Build of configuration Debug for project task_53 ****
+make all 
+make: Nada a ser feito para `all'.
+00:59:15 **** Incremental Build of configuration Debug for project task_53 ****
+make all 
+make: Nada a ser feito para `all'.
+00:59:37 **** Incremental Build of configuration Debug for project task_53 ****
+make all 
+make: Nada a ser feito para `all'.
+01:00:18 **** Incremental Build of configuration Debug for project task_53 ****
+make all 
+make: Nada a ser feito para `all'.
+01:01:07 **** Auto Build of configuration Debug for project task_53 ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../task_53_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:50:2: error: expected ';' before 'XGpio_DiscreteWrite'
+  XGpio_DiscreteWrite(&GPIO_0, 1, GPIO_0_conf.BaseAddress);
+  ^
+../src/main.c:52:13: warning: passing argument 1 of 'xil_printf' makes pointer from integer without a cast [-Wint-conversion]
+  xil_printf(XGpio_DiscreteRead(&GPIO_0, 2));
+             ^
+In file included from c:\xilinx\sdk\2016.4\gnu\microblaze\nt\microblaze-xilinx-elf\include\stdio.h:29:0,
+                 from ../src/main.c:1:
+c:\xilinx\sdk\2016.4\gnu\microblaze\nt\microblaze-xilinx-elf\include\stdio.h:221:9: note: expected 'const char *' but argument is of type 'u32 {aka long unsigned int}'
+ void    _EXFUN(xil_printf, (const char*, ...));
+         ^
+../src/main.c:16:6: warning: unused variable 'array' [-Wunused-variable]
+  int array[]={0x13b, 0x1c5, 0x251, 0x267, 0x286, 0x2b7, 0x2a9, 0x29a, 0x26c,
+      ^
+../src/main.c:13:6: warning: unused variable 'word' [-Wunused-variable]
+  int word = 0x00000000;
+      ^
+../src/main.c:12:6: warning: unused variable 'number_words' [-Wunused-variable]
+  int number_words = 100;
+      ^
+make: ** [src/main.o] Erro 1
+01:01:16 **** Auto Build of configuration Debug for project task_53 ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../task_53_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:52:13: warning: passing argument 1 of 'xil_printf' makes pointer from integer without a cast [-Wint-conversion]
+  xil_printf(XGpio_DiscreteRead(&GPIO_0, 2));
+             ^
+In file included from c:\xilinx\sdk\2016.4\gnu\microblaze\nt\microblaze-xilinx-elf\include\stdio.h:29:0,
+                 from ../src/main.c:1:
+c:\xilinx\sdk\2016.4\gnu\microblaze\nt\microblaze-xilinx-elf\include\stdio.h:221:9: note: expected 'const char *' but argument is of type 'u32 {aka long unsigned int}'
+ void    _EXFUN(xil_printf, (const char*, ...));
+         ^
+../src/main.c:16:6: warning: unused variable 'array' [-Wunused-variable]
+  int array[]={0x13b, 0x1c5, 0x251, 0x267, 0x286, 0x2b7, 0x2a9, 0x29a, 0x26c,
+      ^
+../src/main.c:13:6: warning: unused variable 'word' [-Wunused-variable]
+  int word = 0x00000000;
+      ^
+../src/main.c:12:6: warning: unused variable 'number_words' [-Wunused-variable]
+  int number_words = 100;
+      ^
+'Finished building: ../src/main.c'
+' '
+'Building target: task_53.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../task_53_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -o "task_53.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: task_53.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size task_53.elf  |tee "task_53.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   8060	    296	   3156	  11512	   2cf8	task_53.elf
+'Finished building: task_53.elf.size'
+' '
+01:12:24 **** Clean-only build of project task_53_bsp ****
+make -k clean 
+rm -f microblaze_0/lib/libxil.a
+01:12:25 **** Clean-only build of configuration Debug for project task_53 ****
+make clean 
+rm -rf  ./src/main.o ./src/platform.o  ./src/main.d ./src/platform.d  task_53.elf.size  task_53.elf
+' '
+01:12:25 **** Build of project task_53_bsp ****
+make -k all 
+"Running Make include in microblaze_0/libsrc/bram_v4_1/src"
+make -C microblaze_0/libsrc/bram_v4_1/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in microblaze_0/libsrc/cpu_v2_5/src"
+make -C microblaze_0/libsrc/cpu_v2_5/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in microblaze_0/libsrc/gpio_v4_3/src"
+make -C microblaze_0/libsrc/gpio_v4_3/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in microblaze_0/libsrc/standalone_v6_1/src"
+make -C microblaze_0/libsrc/standalone_v6_1/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in microblaze_0/libsrc/uartlite_v3_2/src"
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make libs in microblaze_0/libsrc/bram_v4_1/src"
+make -C microblaze_0/libsrc/bram_v4_1/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling bram"
+mb-ar: creating ../../../lib/libxil.a
+"Running Make libs in microblaze_0/libsrc/cpu_v2_5/src"
+make -C microblaze_0/libsrc/cpu_v2_5/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling cpu"
+"Running Make libs in microblaze_0/libsrc/gpio_v4_3/src"
+make -C microblaze_0/libsrc/gpio_v4_3/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling gpio"
+"Running Make libs in microblaze_0/libsrc/standalone_v6_1/src"
+make -C microblaze_0/libsrc/standalone_v6_1/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling standalone";
+"Running Make libs in microblaze_0/libsrc/uartlite_v3_2/src"
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling uartlite"
+'Finished building libraries'
+01:12:31 **** Build of configuration Debug for project task_53 ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../task_53_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:52:13: warning: passing argument 1 of 'xil_printf' makes pointer from integer without a cast [-Wint-conversion]
+  xil_printf(XGpio_DiscreteRead(&GPIO_0, 2));
+             ^
+In file included from c:\xilinx\sdk\2016.4\gnu\microblaze\nt\microblaze-xilinx-elf\include\stdio.h:29:0,
+                 from ../src/main.c:1:
+c:\xilinx\sdk\2016.4\gnu\microblaze\nt\microblaze-xilinx-elf\include\stdio.h:221:9: note: expected 'const char *' but argument is of type 'u32 {aka long unsigned int}'
+ void    _EXFUN(xil_printf, (const char*, ...));
+         ^
+../src/main.c:16:6: warning: unused variable 'array' [-Wunused-variable]
+  int array[]={0x13b, 0x1c5, 0x251, 0x267, 0x286, 0x2b7, 0x2a9, 0x29a, 0x26c,
+      ^
+../src/main.c:13:6: warning: unused variable 'word' [-Wunused-variable]
+  int word = 0x00000000;
+      ^
+../src/main.c:12:6: warning: unused variable 'number_words' [-Wunused-variable]
+  int number_words = 100;
+      ^
+'Finished building: ../src/main.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -I../../task_53_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: task_53.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../task_53_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -o "task_53.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: task_53.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size task_53.elf  |tee "task_53.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   8064	    296	   3152	  11512	   2cf8	task_53.elf
+'Finished building: task_53.elf.size'
+' '
+01:12:36 **** Incremental Build of configuration Debug for project task_53 ****
+make all 
+make: Nada a ser feito para `all'.
+01:13:25 **** Auto Build of configuration Debug for project task_53 ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../task_53_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:52:13: warning: passing argument 1 of 'xil_printf' makes pointer from integer without a cast [-Wint-conversion]
+  xil_printf(XGpio_DiscreteRead(&GPIO_0, 2));
+             ^
+In file included from c:\xilinx\sdk\2016.4\gnu\microblaze\nt\microblaze-xilinx-elf\include\stdio.h:29:0,
+                 from ../src/main.c:1:
+c:\xilinx\sdk\2016.4\gnu\microblaze\nt\microblaze-xilinx-elf\include\stdio.h:221:9: note: expected 'const char *' but argument is of type 'u32 {aka long unsigned int}'
+ void    _EXFUN(xil_printf, (const char*, ...));
+         ^
+../src/main.c:16:6: warning: unused variable 'array' [-Wunused-variable]
+  int array[]={0x13b, 0x1c5, 0x251, 0x267, 0x286, 0x2b7, 0x2a9, 0x29a, 0x26c,
+      ^
+../src/main.c:13:6: warning: unused variable 'word' [-Wunused-variable]
+  int word = 0x00000000;
+      ^
+../src/main.c:12:6: warning: unused variable 'number_words' [-Wunused-variable]
+  int number_words = 100;
+      ^
+'Finished building: ../src/main.c'
+' '
+'Building target: task_53.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../task_53_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -o "task_53.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: task_53.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size task_53.elf  |tee "task_53.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   8060	    296	   3156	  11512	   2cf8	task_53.elf
+'Finished building: task_53.elf.size'
+' '
+01:13:28 **** Incremental Build of configuration Debug for project task_53 ****
+make all 
+make: Nada a ser feito para `all'.
+01:14:13 **** Incremental Build of configuration Debug for project task_53 ****
+make all 
+make: Nada a ser feito para `all'.
+01:33:52 **** Auto Build of configuration Debug for project task_53 ****
+make all 
+make: Nada a ser feito para `all'.
+01:35:05 **** Clean-only build of configuration Debug for project task_53 ****
+make clean 
+rm -rf  ./src/main.o ./src/platform.o  ./src/main.d ./src/platform.d  task_53.elf.size  task_53.elf
+' '
+01:35:05 **** Auto Build of configuration Debug for project task_53 ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../task_53_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:52:13: warning: passing argument 1 of 'xil_printf' makes pointer from integer without a cast [-Wint-conversion]
+  xil_printf(XGpio_DiscreteRead(&GPIO_0, 2));
+             ^
+In file included from c:\xilinx\sdk\2016.4\gnu\microblaze\nt\microblaze-xilinx-elf\include\stdio.h:29:0,
+                 from ../src/main.c:1:
+c:\xilinx\sdk\2016.4\gnu\microblaze\nt\microblaze-xilinx-elf\include\stdio.h:221:9: note: expected 'const char *' but argument is of type 'u32 {aka long unsigned int}'
+ void    _EXFUN(xil_printf, (const char*, ...));
+         ^
+../src/main.c:16:6: warning: unused variable 'array' [-Wunused-variable]
+  int array[]={0x13b, 0x1c5, 0x251, 0x267, 0x286, 0x2b7, 0x2a9, 0x29a, 0x26c,
+      ^
+../src/main.c:13:6: warning: unused variable 'word' [-Wunused-variable]
+  int word = 0x00000000;
+      ^
+../src/main.c:12:6: warning: unused variable 'number_words' [-Wunused-variable]
+  int number_words = 100;
+      ^
+'Finished building: ../src/main.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -I../../task_53_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: task_53.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../task_53_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -o "task_53.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: task_53.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size task_53.elf  |tee "task_53.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   8060	    296	   3156	  11512	   2cf8	task_53.elf
+'Finished building: task_53.elf.size'
+' '
+01:35:41 **** Auto Build of configuration Debug for project task_53 ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../task_53_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c:12:6: error: conflicting types for 'print'
+ void print(char *str);
+      ^
+In file included from c:\xilinx\sdk\2016.4\gnu\microblaze\nt\microblaze-xilinx-elf\include\stdio.h:29:0,
+                 from ../src/main.c:1:
+c:\xilinx\sdk\2016.4\gnu\microblaze\nt\microblaze-xilinx-elf\include\stdio.h:223:9: note: previous declaration of 'print' was here
+ void    _EXFUN(print, (const char* ));
+         ^
+../src/main.c: In function 'main':
+../src/main.c:30:1: error: expected '}' before numeric constant
+ 11,10,999,888,777,666,555,444,333,222,111,133,292,3
+ ^
+../src/main.c:53:1: error: unknown type name 'Interface'
+ Interface entre hardware e software
+ ^
+../src/main.c:53:17: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'hardware'
+ Interface entre hardware e software
+                 ^
+../src/main.c:69:1: warning: 'MB_Sleep' is deprecated [-Wdeprecated-declarations]
+ MB_Sleep(10);
+ ^
+In file included from ../src/main.c:5:0:
+../../task_53_bsp/microblaze_0/include/microblaze_sleep.h:74:6: note: declared here
+ void MB_Sleep(u32 MilliSeconds) __attribute__((__deprecated__));
+      ^
+../src/main.c:73:1: warning: 'MB_Sleep' is deprecated [-Wdeprecated-declarations]
+ MB_Sleep(10);
+ ^
+In file included from ../src/main.c:5:0:
+../../task_53_bsp/microblaze_0/include/microblaze_sleep.h:74:6: note: declared here
+ void MB_Sleep(u32 MilliSeconds) __attribute__((__deprecated__));
+      ^
+make: ** [src/main.o] Erro 1
+01:35:44 **** Incremental Build of configuration Debug for project task_53 ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../task_53_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c:12:6: error: conflicting types for 'print'
+ void print(char *str);
+      ^
+In file included from c:\xilinx\sdk\2016.4\gnu\microblaze\nt\microblaze-xilinx-elf\include\stdio.h:29:0,
+                 from ../src/main.c:1:
+c:\xilinx\sdk\2016.4\gnu\microblaze\nt\microblaze-xilinx-elf\include\stdio.h:223:9: note: previous declaration of 'print' was here
+ void    _EXFUN(print, (const char* ));
+         ^
+../src/main.c: In function 'main':
+../src/main.c:30:1: error: expected '}' before numeric constant
+ 11,10,999,888,777,666,555,444,333,222,111,133,292,3
+ ^
+../src/main.c:53:1: error: unknown type name 'Interface'
+ Interface entre hardware e software
+ ^
+../src/main.c:53:17: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'hardware'
+ Interface entre hardware e software
+                 ^
+../src/main.c:69:1: warning: 'MB_Sleep' is deprecated [-Wdeprecated-declarations]
+ MB_Sleep(10);
+ ^
+In file included from ../src/main.c:5:0:
+../../task_53_bsp/microblaze_0/include/microblaze_sleep.h:74:6: note: declared here
+ void MB_Sleep(u32 MilliSeconds) __attribute__((__deprecated__));
+      ^
+../src/main.c:73:1: warning: 'MB_Sleep' is deprecated [-Wdeprecated-declarations]
+ MB_Sleep(10);
+ ^
+In file included from ../src/main.c:5:0:
+../../task_53_bsp/microblaze_0/include/microblaze_sleep.h:74:6: note: declared here
+ void MB_Sleep(u32 MilliSeconds) __attribute__((__deprecated__));
+      ^
+make: ** [src/main.o] Erro 1
+01:47:28 **** Auto Build of configuration Debug for project task_53 ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../task_53_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c:12:6: error: conflicting types for 'print'
+ void print(char *str);
+      ^
+In file included from c:\xilinx\sdk\2016.4\gnu\microblaze\nt\microblaze-xilinx-elf\include\stdio.h:29:0,
+                 from ../src/main.c:1:
+c:\xilinx\sdk\2016.4\gnu\microblaze\nt\microblaze-xilinx-elf\include\stdio.h:223:9: note: previous declaration of 'print' was here
+ void    _EXFUN(print, (const char* ));
+         ^
+../src/main.c: In function 'main':
+../src/main.c:42:1: warning: 'MB_Sleep' is deprecated [-Wdeprecated-declarations]
+ MB_Sleep(10);
+ ^
+In file included from ../src/main.c:5:0:
+../../task_53_bsp/microblaze_0/include/microblaze_sleep.h:74:6: note: declared here
+ void MB_Sleep(u32 MilliSeconds) __attribute__((__deprecated__));
+      ^
+../src/main.c:47:1: warning: 'MB_Sleep' is deprecated [-Wdeprecated-declarations]
+ MB_Sleep(10);
+ ^
+In file included from ../src/main.c:5:0:
+../../task_53_bsp/microblaze_0/include/microblaze_sleep.h:74:6: note: declared here
+ void MB_Sleep(u32 MilliSeconds) __attribute__((__deprecated__));
+      ^
+make: ** [src/main.o] Erro 1
+01:47:33 **** Incremental Build of configuration Debug for project task_53 ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../task_53_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c:12:6: error: conflicting types for 'print'
+ void print(char *str);
+      ^
+In file included from c:\xilinx\sdk\2016.4\gnu\microblaze\nt\microblaze-xilinx-elf\include\stdio.h:29:0,
+                 from ../src/main.c:1:
+c:\xilinx\sdk\2016.4\gnu\microblaze\nt\microblaze-xilinx-elf\include\stdio.h:223:9: note: previous declaration of 'print' was here
+ void    _EXFUN(print, (const char* ));
+         ^
+../src/main.c: In function 'main':
+../src/main.c:42:1: warning: 'MB_Sleep' is deprecated [-Wdeprecated-declarations]
+ MB_Sleep(10);
+ ^
+In file included from ../src/main.c:5:0:
+../../task_53_bsp/microblaze_0/include/microblaze_sleep.h:74:6: note: declared here
+ void MB_Sleep(u32 MilliSeconds) __attribute__((__deprecated__));
+      ^
+../src/main.c:47:1: warning: 'MB_Sleep' is deprecated [-Wdeprecated-declarations]
+ MB_Sleep(10);
+ ^
+In file included from ../src/main.c:5:0:
+../../task_53_bsp/microblaze_0/include/microblaze_sleep.h:74:6: note: declared here
+ void MB_Sleep(u32 MilliSeconds) __attribute__((__deprecated__));
+      ^
+make: ** [src/main.o] Erro 1
+01:49:01 **** Auto Build of configuration Debug for project task_53 ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../task_53_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:42:1: warning: 'MB_Sleep' is deprecated [-Wdeprecated-declarations]
+ MB_Sleep(10);
+ ^
+In file included from ../src/main.c:5:0:
+../../task_53_bsp/microblaze_0/include/microblaze_sleep.h:74:6: note: declared here
+ void MB_Sleep(u32 MilliSeconds) __attribute__((__deprecated__));
+      ^
+../src/main.c:47:1: warning: 'MB_Sleep' is deprecated [-Wdeprecated-declarations]
+ MB_Sleep(10);
+ ^
+In file included from ../src/main.c:5:0:
+../../task_53_bsp/microblaze_0/include/microblaze_sleep.h:74:6: note: declared here
+ void MB_Sleep(u32 MilliSeconds) __attribute__((__deprecated__));
+      ^
+'Finished building: ../src/main.c'
+' '
+'Building target: task_53.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../task_53_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -o "task_53.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: task_53.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size task_53.elf  |tee "task_53.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   6776	    292	   3156	  10224	   27f0	task_53.elf
+'Finished building: task_53.elf.size'
+' '
+01:49:13 **** Auto Build of configuration Debug for project task_53 ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../task_53_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c:11:6: error: conflicting types for 'print'
+ void print(char *str);
+      ^
+In file included from c:\xilinx\sdk\2016.4\gnu\microblaze\nt\microblaze-xilinx-elf\include\stdio.h:29:0,
+                 from ../src/main.c:1:
+c:\xilinx\sdk\2016.4\gnu\microblaze\nt\microblaze-xilinx-elf\include\stdio.h:223:9: note: previous declaration of 'print' was here
+ void    _EXFUN(print, (const char* ));
+         ^
+../src/main.c: In function 'main':
+../src/main.c:42:1: warning: 'MB_Sleep' is deprecated [-Wdeprecated-declarations]
+ MB_Sleep(10);
+ ^
+In file included from ../src/main.c:5:0:
+../../task_53_bsp/microblaze_0/include/microblaze_sleep.h:74:6: note: declared here
+ void MB_Sleep(u32 MilliSeconds) __attribute__((__deprecated__));
+      ^
+../src/main.c:47:1: warning: 'MB_Sleep' is deprecated [-Wdeprecated-declarations]
+ MB_Sleep(10);
+ ^
+In file included from ../src/main.c:5:0:
+../../task_53_bsp/microblaze_0/include/microblaze_sleep.h:74:6: note: declared here
+ void MB_Sleep(u32 MilliSeconds) __attribute__((__deprecated__));
+      ^
+make: ** [src/main.o] Erro 1
+01:49:25 **** Auto Build of configuration Debug for project task_53 ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../task_53_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c:11:6: error: conflicting types for 'print'
+ void print(char* str);
+      ^
+In file included from c:\xilinx\sdk\2016.4\gnu\microblaze\nt\microblaze-xilinx-elf\include\stdio.h:29:0,
+                 from ../src/main.c:1:
+c:\xilinx\sdk\2016.4\gnu\microblaze\nt\microblaze-xilinx-elf\include\stdio.h:223:9: note: previous declaration of 'print' was here
+ void    _EXFUN(print, (const char* ));
+         ^
+../src/main.c: In function 'main':
+../src/main.c:42:1: warning: 'MB_Sleep' is deprecated [-Wdeprecated-declarations]
+ MB_Sleep(10);
+ ^
+In file included from ../src/main.c:5:0:
+../../task_53_bsp/microblaze_0/include/microblaze_sleep.h:74:6: note: declared here
+ void MB_Sleep(u32 MilliSeconds) __attribute__((__deprecated__));
+      ^
+../src/main.c:47:1: warning: 'MB_Sleep' is deprecated [-Wdeprecated-declarations]
+ MB_Sleep(10);
+ ^
+In file included from ../src/main.c:5:0:
+../../task_53_bsp/microblaze_0/include/microblaze_sleep.h:74:6: note: declared here
+ void MB_Sleep(u32 MilliSeconds) __attribute__((__deprecated__));
+      ^
+make: ** [src/main.o] Erro 1
+01:49:38 **** Auto Build of configuration Debug for project task_53 ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../task_53_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c:11:6: error: conflicting types for 'print'
+ void print(char *str);
+      ^
+In file included from c:\xilinx\sdk\2016.4\gnu\microblaze\nt\microblaze-xilinx-elf\include\stdio.h:29:0,
+                 from ../src/main.c:1:
+c:\xilinx\sdk\2016.4\gnu\microblaze\nt\microblaze-xilinx-elf\include\stdio.h:223:9: note: previous declaration of 'print' was here
+ void    _EXFUN(print, (const char* ));
+         ^
+../src/main.c: In function 'main':
+../src/main.c:34:15: error: expected expression before ';' token
+ for(i=0;i<size;i++) {
+               ^
+../src/main.c:42:1: warning: 'MB_Sleep' is deprecated [-Wdeprecated-declarations]
+ MB_Sleep(10);
+ ^
+In file included from ../src/main.c:5:0:
+../../task_53_bsp/microblaze_0/include/microblaze_sleep.h:74:6: note: declared here
+ void MB_Sleep(u32 MilliSeconds) __attribute__((__deprecated__));
+      ^
+../src/main.c:47:1: warning: 'MB_Sleep' is deprecated [-Wdeprecated-declarations]
+ MB_Sleep(10);
+ ^
+In file included from ../src/main.c:5:0:
+../../task_53_bsp/microblaze_0/include/microblaze_sleep.h:74:6: note: declared here
+ void MB_Sleep(u32 MilliSeconds) __attribute__((__deprecated__));
+      ^
+../src/main.c:49:16: error: expected expression before ';' token
+ for(i=0; i<size; i++)
+                ^
+make: ** [src/main.o] Erro 1
+01:49:42 **** Auto Build of configuration Debug for project task_53 ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../task_53_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c:11:6: error: conflicting types for 'print'
+ void print(char *str);
+      ^
+In file included from c:\xilinx\sdk\2016.4\gnu\microblaze\nt\microblaze-xilinx-elf\include\stdio.h:29:0,
+                 from ../src/main.c:1:
+c:\xilinx\sdk\2016.4\gnu\microblaze\nt\microblaze-xilinx-elf\include\stdio.h:223:9: note: previous declaration of 'print' was here
+ void    _EXFUN(print, (const char* ));
+         ^
+../src/main.c: In function 'main':
+../src/main.c:42:1: warning: 'MB_Sleep' is deprecated [-Wdeprecated-declarations]
+ MB_Sleep(10);
+ ^
+In file included from ../src/main.c:5:0:
+../../task_53_bsp/microblaze_0/include/microblaze_sleep.h:74:6: note: declared here
+ void MB_Sleep(u32 MilliSeconds) __attribute__((__deprecated__));
+      ^
+../src/main.c:47:1: warning: 'MB_Sleep' is deprecated [-Wdeprecated-declarations]
+ MB_Sleep(10);
+ ^
+In file included from ../src/main.c:5:0:
+../../task_53_bsp/microblaze_0/include/microblaze_sleep.h:74:6: note: declared here
+ void MB_Sleep(u32 MilliSeconds) __attribute__((__deprecated__));
+      ^
+make: ** [src/main.o] Erro 1
+01:51:06 **** Auto Build of configuration Debug for project task_53 ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../task_53_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c:11:6: error: conflicting types for 'print'
+ void print(char *str);
+      ^
+In file included from c:\xilinx\sdk\2016.4\gnu\microblaze\nt\microblaze-xilinx-elf\include\stdio.h:29:0,
+                 from ../src/main.c:1:
+c:\xilinx\sdk\2016.4\gnu\microblaze\nt\microblaze-xilinx-elf\include\stdio.h:223:9: note: previous declaration of 'print' was here
+ void    _EXFUN(print, (const char* ));
+         ^
+../src/main.c: In function 'main':
+../src/main.c:42:1: warning: 'MB_Sleep' is deprecated [-Wdeprecated-declarations]
+ MB_Sleep(10);
+ ^
+In file included from ../src/main.c:5:0:
+../../task_53_bsp/microblaze_0/include/microblaze_sleep.h:74:6: note: declared here
+ void MB_Sleep(u32 MilliSeconds) __attribute__((__deprecated__));
+      ^
+../src/main.c:47:1: warning: 'MB_Sleep' is deprecated [-Wdeprecated-declarations]
+ MB_Sleep(10);
+ ^
+In file included from ../src/main.c:5:0:
+../../task_53_bsp/microblaze_0/include/microblaze_sleep.h:74:6: note: declared here
+ void MB_Sleep(u32 MilliSeconds) __attribute__((__deprecated__));
+      ^
+make: ** [src/main.o] Erro 1
+01:52:15 **** Auto Build of configuration Debug for project task_53 ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../task_53_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c:11:6: error: conflicting types for 'print'
+ void print (char *);
+      ^
+In file included from c:\xilinx\sdk\2016.4\gnu\microblaze\nt\microblaze-xilinx-elf\include\stdio.h:29:0,
+                 from ../src/main.c:1:
+c:\xilinx\sdk\2016.4\gnu\microblaze\nt\microblaze-xilinx-elf\include\stdio.h:223:9: note: previous declaration of 'print' was here
+ void    _EXFUN(print, (const char* ));
+         ^
+../src/main.c: In function 'main':
+../src/main.c:42:1: warning: 'MB_Sleep' is deprecated [-Wdeprecated-declarations]
+ MB_Sleep(10);
+ ^
+In file included from ../src/main.c:5:0:
+../../task_53_bsp/microblaze_0/include/microblaze_sleep.h:74:6: note: declared here
+ void MB_Sleep(u32 MilliSeconds) __attribute__((__deprecated__));
+      ^
+../src/main.c:47:1: warning: 'MB_Sleep' is deprecated [-Wdeprecated-declarations]
+ MB_Sleep(10);
+ ^
+In file included from ../src/main.c:5:0:
+../../task_53_bsp/microblaze_0/include/microblaze_sleep.h:74:6: note: declared here
+ void MB_Sleep(u32 MilliSeconds) __attribute__((__deprecated__));
+      ^
+make: ** [src/main.o] Erro 1
+01:52:25 **** Auto Build of configuration Debug for project task_53 ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../task_53_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c:11:6: error: conflicting types for 'print'
+ void print(char *);
+      ^
+In file included from c:\xilinx\sdk\2016.4\gnu\microblaze\nt\microblaze-xilinx-elf\include\stdio.h:29:0,
+                 from ../src/main.c:1:
+c:\xilinx\sdk\2016.4\gnu\microblaze\nt\microblaze-xilinx-elf\include\stdio.h:223:9: note: previous declaration of 'print' was here
+ void    _EXFUN(print, (const char* ));
+         ^
+../src/main.c: In function 'main':
+../src/main.c:42:1: warning: 'MB_Sleep' is deprecated [-Wdeprecated-declarations]
+ MB_Sleep(10);
+ ^
+In file included from ../src/main.c:5:0:
+../../task_53_bsp/microblaze_0/include/microblaze_sleep.h:74:6: note: declared here
+ void MB_Sleep(u32 MilliSeconds) __attribute__((__deprecated__));
+      ^
+../src/main.c:47:1: warning: 'MB_Sleep' is deprecated [-Wdeprecated-declarations]
+ MB_Sleep(10);
+ ^
+In file included from ../src/main.c:5:0:
+../../task_53_bsp/microblaze_0/include/microblaze_sleep.h:74:6: note: declared here
+ void MB_Sleep(u32 MilliSeconds) __attribute__((__deprecated__));
+      ^
+make: ** [src/main.o] Erro 1
+01:52:29 **** Auto Build of configuration Debug for project task_53 ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../task_53_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c:11:6: error: conflicting types for 'print'
+ void print(char *str);
+      ^
+In file included from c:\xilinx\sdk\2016.4\gnu\microblaze\nt\microblaze-xilinx-elf\include\stdio.h:29:0,
+                 from ../src/main.c:1:
+c:\xilinx\sdk\2016.4\gnu\microblaze\nt\microblaze-xilinx-elf\include\stdio.h:223:9: note: previous declaration of 'print' was here
+ void    _EXFUN(print, (const char* ));
+         ^
+../src/main.c: In function 'main':
+../src/main.c:42:1: warning: 'MB_Sleep' is deprecated [-Wdeprecated-declarations]
+ MB_Sleep(10);
+ ^
+In file included from ../src/main.c:5:0:
+../../task_53_bsp/microblaze_0/include/microblaze_sleep.h:74:6: note: declared here
+ void MB_Sleep(u32 MilliSeconds) __attribute__((__deprecated__));
+      ^
+../src/main.c:47:1: warning: 'MB_Sleep' is deprecated [-Wdeprecated-declarations]
+ MB_Sleep(10);
+ ^
+In file included from ../src/main.c:5:0:
+../../task_53_bsp/microblaze_0/include/microblaze_sleep.h:74:6: note: declared here
+ void MB_Sleep(u32 MilliSeconds) __attribute__((__deprecated__));
+      ^
+make: ** [src/main.o] Erro 1
+01:53:09 **** Auto Build of configuration Debug for project task_53 ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../task_53_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:40:1: warning: 'MB_Sleep' is deprecated [-Wdeprecated-declarations]
+ MB_Sleep(10);
+ ^
+In file included from ../src/main.c:5:0:
+../../task_53_bsp/microblaze_0/include/microblaze_sleep.h:74:6: note: declared here
+ void MB_Sleep(u32 MilliSeconds) __attribute__((__deprecated__));
+      ^
+../src/main.c:45:1: warning: 'MB_Sleep' is deprecated [-Wdeprecated-declarations]
+ MB_Sleep(10);
+ ^
+In file included from ../src/main.c:5:0:
+../../task_53_bsp/microblaze_0/include/microblaze_sleep.h:74:6: note: declared here
+ void MB_Sleep(u32 MilliSeconds) __attribute__((__deprecated__));
+      ^
+'Finished building: ../src/main.c'
+' '
+'Building target: task_53.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../task_53_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -o "task_53.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: task_53.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size task_53.elf  |tee "task_53.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   6776	    292	   3156	  10224	   27f0	task_53.elf
+'Finished building: task_53.elf.size'
+' '
+01:53:13 **** Auto Build of configuration Debug for project task_53 ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../task_53_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c:15:6: error: conflicting types for 'print'
+ void print(char *str);
+      ^
+In file included from c:\xilinx\sdk\2016.4\gnu\microblaze\nt\microblaze-xilinx-elf\include\stdio.h:29:0,
+                 from ../src/main.c:1:
+c:\xilinx\sdk\2016.4\gnu\microblaze\nt\microblaze-xilinx-elf\include\stdio.h:223:9: note: previous declaration of 'print' was here
+ void    _EXFUN(print, (const char* ));
+         ^
+../src/main.c: In function 'main':
+../src/main.c:42:1: warning: 'MB_Sleep' is deprecated [-Wdeprecated-declarations]
+ MB_Sleep(10);
+ ^
+In file included from ../src/main.c:5:0:
+../../task_53_bsp/microblaze_0/include/microblaze_sleep.h:74:6: note: declared here
+ void MB_Sleep(u32 MilliSeconds) __attribute__((__deprecated__));
+      ^
+../src/main.c:47:1: warning: 'MB_Sleep' is deprecated [-Wdeprecated-declarations]
+ MB_Sleep(10);
+ ^
+In file included from ../src/main.c:5:0:
+../../task_53_bsp/microblaze_0/include/microblaze_sleep.h:74:6: note: declared here
+ void MB_Sleep(u32 MilliSeconds) __attribute__((__deprecated__));
+      ^
+make: ** [src/main.o] Erro 1
+01:53:46 **** Auto Build of configuration Debug for project task_53 ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../task_53_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:41:1: warning: 'MB_Sleep' is deprecated [-Wdeprecated-declarations]
+ MB_Sleep(10);
+ ^
+In file included from ../src/main.c:5:0:
+../../task_53_bsp/microblaze_0/include/microblaze_sleep.h:74:6: note: declared here
+ void MB_Sleep(u32 MilliSeconds) __attribute__((__deprecated__));
+      ^
+../src/main.c:46:1: warning: 'MB_Sleep' is deprecated [-Wdeprecated-declarations]
+ MB_Sleep(10);
+ ^
+In file included from ../src/main.c:5:0:
+../../task_53_bsp/microblaze_0/include/microblaze_sleep.h:74:6: note: declared here
+ void MB_Sleep(u32 MilliSeconds) __attribute__((__deprecated__));
+      ^
+'Finished building: ../src/main.c'
+' '
+'Building target: task_53.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../task_53_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -o "task_53.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: task_53.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size task_53.elf  |tee "task_53.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   6776	    292	   3156	  10224	   27f0	task_53.elf
+'Finished building: task_53.elf.size'
+' '
+01:53:50 **** Incremental Build of configuration Debug for project task_53 ****
+make all 
+make: Nada a ser feito para `all'.
+01:54:06 **** Auto Build of configuration Debug for project task_53 ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../task_53_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:41:1: warning: 'MB_Sleep' is deprecated [-Wdeprecated-declarations]
+ MB_Sleep(10);
+ ^
+In file included from ../src/main.c:5:0:
+../../task_53_bsp/microblaze_0/include/microblaze_sleep.h:74:6: note: declared here
+ void MB_Sleep(u32 MilliSeconds) __attribute__((__deprecated__));
+      ^
+../src/main.c:46:1: warning: 'MB_Sleep' is deprecated [-Wdeprecated-declarations]
+ MB_Sleep(10);
+ ^
+In file included from ../src/main.c:5:0:
+../../task_53_bsp/microblaze_0/include/microblaze_sleep.h:74:6: note: declared here
+ void MB_Sleep(u32 MilliSeconds) __attribute__((__deprecated__));
+      ^
+'Finished building: ../src/main.c'
+' '
+'Building target: task_53.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../task_53_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -o "task_53.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: task_53.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size task_53.elf  |tee "task_53.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   6776	    292	   3156	  10224	   27f0	task_53.elf
+'Finished building: task_53.elf.size'
+' '
+01:54:40 **** Incremental Build of configuration Debug for project task_53 ****
+make all 
+make: Nada a ser feito para `all'.
+01:55:07 **** Incremental Build of configuration Debug for project task_53 ****
+make all 
+make: Nada a ser feito para `all'.
+01:55:45 **** Incremental Build of configuration Debug for project task_53 ****
+make all 
+make: Nada a ser feito para `all'.
+02:05:00 **** Auto Build of configuration Debug for project task_53 ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../task_53_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:41:1: warning: 'MB_Sleep' is deprecated [-Wdeprecated-declarations]
+ MB_Sleep(10);
+ ^
+In file included from ../src/main.c:5:0:
+../../task_53_bsp/microblaze_0/include/microblaze_sleep.h:74:6: note: declared here
+ void MB_Sleep(u32 MilliSeconds) __attribute__((__deprecated__));
+      ^
+../src/main.c:46:1: warning: 'MB_Sleep' is deprecated [-Wdeprecated-declarations]
+ MB_Sleep(10);
+ ^
+In file included from ../src/main.c:5:0:
+../../task_53_bsp/microblaze_0/include/microblaze_sleep.h:74:6: note: declared here
+ void MB_Sleep(u32 MilliSeconds) __attribute__((__deprecated__));
+      ^
+'Finished building: ../src/main.c'
+' '
+'Building target: task_53.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../task_53_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -o "task_53.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: task_53.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size task_53.elf  |tee "task_53.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   6776	    292	   3156	  10224	   27f0	task_53.elf
+'Finished building: task_53.elf.size'
+' '
+02:05:04 **** Incremental Build of configuration Debug for project task_53 ****
+make all 
+make: Nada a ser feito para `all'.
+02:44:45 **** Auto Build of configuration Debug for project task_53 ****
+make all 
+make: Nada a ser feito para `all'.
+02:45:36 **** Auto Build of configuration Debug for project task_53 ****
+make all 
+'Building file: ../src/main2.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main2.o" -I../../task_53_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/main2.d" -MT"src/main2.o" -o "src/main2.o" "../src/main2.c"
+../src/main2.c: In function 'main':
+../src/main2.c:54:13: warning: passing argument 1 of 'xil_printf' makes pointer from integer without a cast [-Wint-conversion]
+  xil_printf(XGpio_DiscreteRead(&GPIO_0, 2));
+             ^
+In file included from c:\xilinx\sdk\2016.4\gnu\microblaze\nt\microblaze-xilinx-elf\include\stdio.h:29:0,
+                 from ../src/main2.c:1:
+c:\xilinx\sdk\2016.4\gnu\microblaze\nt\microblaze-xilinx-elf\include\stdio.h:221:9: note: expected 'const char *' but argument is of type 'u32 {aka long unsigned int}'
+ void    _EXFUN(xil_printf, (const char*, ...));
+         ^
+../src/main2.c:18:6: warning: unused variable 'array' [-Wunused-variable]
+  int array[]={0x13b, 0x1c5, 0x251, 0x267, 0x286, 0x2b7, 0x2a9, 0x29a, 0x26c,
+      ^
+../src/main2.c:15:6: warning: unused variable 'word' [-Wunused-variable]
+  int word = 0x00000000;
+      ^
+../src/main2.c:14:6: warning: unused variable 'number_words' [-Wunused-variable]
+  int number_words = 100;
+      ^
+'Finished building: ../src/main2.c'
+' '
+'Building target: task_53.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../task_53_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -o "task_53.elf"  ./src/main.o ./src/main2.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+./src/main2.o: In function `main':
+C:\CR\Projeto\Task_53\Task_53.sdk\task_53\Debug/../src/main2.c:13: multiple definition of `main'
+./src/main.o:C:\CR\Projeto\Task_53\Task_53.sdk\task_53\Debug/../src/main.c:17: first defined here
+collect2.exe: error: ld returned 1 exit status
+make: ** [task_53.elf] Erro 1
+02:45:55 **** Auto Build of configuration Debug for project task_53 ****
+make all 
+'Building file: ../src/main2.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main2.o" -I../../task_53_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/main2.d" -MT"src/main2.o" -o "src/main2.o" "../src/main2.c"
+../src/main2.c: In function 'main':
+../src/main2.c:54:13: warning: passing argument 1 of 'xil_printf' makes pointer from integer without a cast [-Wint-conversion]
+  xil_printf(XGpio_DiscreteRead(&GPIO_0, 2));
+             ^
+In file included from c:\xilinx\sdk\2016.4\gnu\microblaze\nt\microblaze-xilinx-elf\include\stdio.h:29:0,
+                 from ../src/main2.c:1:
+c:\xilinx\sdk\2016.4\gnu\microblaze\nt\microblaze-xilinx-elf\include\stdio.h:221:9: note: expected 'const char *' but argument is of type 'u32 {aka long unsigned int}'
+ void    _EXFUN(xil_printf, (const char*, ...));
+         ^
+../src/main2.c:18:6: warning: unused variable 'array' [-Wunused-variable]
+  int array[]={0x13b, 0x1c5, 0x251, 0x267, 0x286, 0x2b7, 0x2a9, 0x29a, 0x26c,
+      ^
+../src/main2.c:15:6: warning: unused variable 'word' [-Wunused-variable]
+  int word = 0x00000000;
+      ^
+../src/main2.c:14:6: warning: unused variable 'number_words' [-Wunused-variable]
+  int number_words = 100;
+      ^
+'Finished building: ../src/main2.c'
+' '
+'Building target: task_53.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../task_53_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -o "task_53.elf"  ./src/main.o ./src/main2.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+./src/main2.o: In function `main':
+C:\CR\Projeto\Task_53\Task_53.sdk\task_53\Debug/../src/main2.c:13: multiple definition of `main'
+./src/main.o:C:\CR\Projeto\Task_53\Task_53.sdk\task_53\Debug/../src/main.c:17: first defined here
+collect2.exe: error: ld returned 1 exit status
+make: ** [task_53.elf] Erro 1
+02:46:41 **** Auto Build of configuration Debug for project task_53 ****
+make all 
+'Building file: ../src/main2.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main2.o" -I../../task_53_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/main2.d" -MT"src/main2.o" -o "src/main2.o" "../src/main2.c"
+../src/main2.c:40:2: warning: "/*" within comment [-Wcomment]
+  /*for(int i = 0; i < number_words; i++) {
+  ^
+'Finished building: ../src/main2.c'
+' '
+'Building target: task_53.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../task_53_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -o "task_53.elf"  ./src/main.o ./src/main2.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: task_53.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size task_53.elf  |tee "task_53.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   6776	    292	   3156	  10224	   27f0	task_53.elf
+'Finished building: task_53.elf.size'
+' '
+07:27:39 **** Clean-only build of project task_53_bsp ****
+make -k clean 
+rm -f microblaze_0/lib/libxil.a
+07:27:39 **** Clean-only build of configuration Debug for project task_53 ****
+make clean 
+rm -rf  ./src/main.o ./src/main2.o ./src/platform.o  ./src/main.d ./src/main2.d ./src/platform.d  task_53.elf.size  task_53.elf
+' '
+07:27:39 **** Build of project task_53_bsp ****
+make -k all 
+"Running Make include in microblaze_0/libsrc/bram_v4_1/src"
+make -C microblaze_0/libsrc/bram_v4_1/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in microblaze_0/libsrc/cpu_v2_5/src"
+make -C microblaze_0/libsrc/cpu_v2_5/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in microblaze_0/libsrc/gpio_v4_3/src"
+make -C microblaze_0/libsrc/gpio_v4_3/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in microblaze_0/libsrc/standalone_v6_1/src"
+make -C microblaze_0/libsrc/standalone_v6_1/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in microblaze_0/libsrc/uartlite_v3_2/src"
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make libs in microblaze_0/libsrc/bram_v4_1/src"
+make -C microblaze_0/libsrc/bram_v4_1/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling bram"
+mb-ar: creating ../../../lib/libxil.a
+"Running Make libs in microblaze_0/libsrc/cpu_v2_5/src"
+make -C microblaze_0/libsrc/cpu_v2_5/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling cpu"
+"Running Make libs in microblaze_0/libsrc/gpio_v4_3/src"
+make -C microblaze_0/libsrc/gpio_v4_3/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling gpio"
+"Running Make libs in microblaze_0/libsrc/standalone_v6_1/src"
+make -C microblaze_0/libsrc/standalone_v6_1/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling standalone";
+"Running Make libs in microblaze_0/libsrc/uartlite_v3_2/src"
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling uartlite"
+'Finished building libraries'
+07:27:45 **** Build of configuration Debug for project task_53 ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../task_53_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:41:1: warning: 'MB_Sleep' is deprecated [-Wdeprecated-declarations]
+ MB_Sleep(10);
+ ^
+In file included from ../src/main.c:5:0:
+../../task_53_bsp/microblaze_0/include/microblaze_sleep.h:74:6: note: declared here
+ void MB_Sleep(u32 MilliSeconds) __attribute__((__deprecated__));
+      ^
+../src/main.c:46:1: warning: 'MB_Sleep' is deprecated [-Wdeprecated-declarations]
+ MB_Sleep(10);
+ ^
+In file included from ../src/main.c:5:0:
+../../task_53_bsp/microblaze_0/include/microblaze_sleep.h:74:6: note: declared here
+ void MB_Sleep(u32 MilliSeconds) __attribute__((__deprecated__));
+      ^
+'Finished building: ../src/main.c'
+' '
+'Building file: ../src/main2.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main2.o" -I../../task_53_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/main2.d" -MT"src/main2.o" -o "src/main2.o" "../src/main2.c"
+../src/main2.c:40:2: warning: "/*" within comment [-Wcomment]
+  /*for(int i = 0; i < number_words; i++) {
+  ^
+'Finished building: ../src/main2.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -I../../task_53_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: task_53.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../task_53_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -o "task_53.elf"  ./src/main.o ./src/main2.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: task_53.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size task_53.elf  |tee "task_53.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   6776	    292	   3156	  10224	   27f0	task_53.elf
+'Finished building: task_53.elf.size'
+' '
+07:29:13 **** Incremental Build of configuration Debug for project task_53 ****
+make all 
+make: Nada a ser feito para `all'.
+07:34:08 **** Auto Build of configuration Debug for project task_53 ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../task_53_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:40:2: warning: 'MB_Sleep' is deprecated [-Wdeprecated-declarations]
+  MB_Sleep(10);
+  ^
+In file included from ../src/main.c:5:0:
+../../task_53_bsp/microblaze_0/include/microblaze_sleep.h:74:6: note: declared here
+ void MB_Sleep(u32 MilliSeconds) __attribute__((__deprecated__));
+      ^
+../src/main.c:45:2: warning: 'MB_Sleep' is deprecated [-Wdeprecated-declarations]
+  MB_Sleep(10);
+  ^
+In file included from ../src/main.c:5:0:
+../../task_53_bsp/microblaze_0/include/microblaze_sleep.h:74:6: note: declared here
+ void MB_Sleep(u32 MilliSeconds) __attribute__((__deprecated__));
+      ^
+'Finished building: ../src/main.c'
+' '
+'Building target: task_53.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../task_53_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -o "task_53.elf"  ./src/main.o ./src/main2.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: task_53.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size task_53.elf  |tee "task_53.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   6776	    292	   3156	  10224	   27f0	task_53.elf
+'Finished building: task_53.elf.size'
+' '
+07:42:16 **** Auto Build of configuration Debug for project task_53 ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../task_53_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:40:2: warning: 'MB_Sleep' is deprecated [-Wdeprecated-declarations]
+  MB_Sleep(10);
+  ^
+In file included from ../src/main.c:5:0:
+../../task_53_bsp/microblaze_0/include/microblaze_sleep.h:74:6: note: declared here
+ void MB_Sleep(u32 MilliSeconds) __attribute__((__deprecated__));
+      ^
+../src/main.c:45:2: warning: 'MB_Sleep' is deprecated [-Wdeprecated-declarations]
+  MB_Sleep(10);
+  ^
+In file included from ../src/main.c:5:0:
+../../task_53_bsp/microblaze_0/include/microblaze_sleep.h:74:6: note: declared here
+ void MB_Sleep(u32 MilliSeconds) __attribute__((__deprecated__));
+      ^
+'Finished building: ../src/main.c'
+' '
+'Building target: task_53.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../task_53_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -o "task_53.elf"  ./src/main.o ./src/main2.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: task_53.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size task_53.elf  |tee "task_53.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   6776	    292	   3156	  10224	   27f0	task_53.elf
+'Finished building: task_53.elf.size'
+' '
+07:42:22 **** Incremental Build of configuration Debug for project task_53 ****
+make all 
+make: Nada a ser feito para `all'.
+07:43:06 **** Auto Build of configuration Debug for project task_53 ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../task_53_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: task_53.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../task_53_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -o "task_53.elf"  ./src/main.o ./src/main2.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+c:/xilinx/sdk/2016.4/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/5.2.0/../../../../microblaze-xilinx-elf/lib/le/crtinit.o: In function `_crtinit':
+(.text+0x78): undefined reference to `main'
+collect2.exe: error: ld returned 1 exit status
+make: ** [task_53.elf] Erro 1
+07:43:24 **** Auto Build of configuration Debug for project task_53 ****
+make all 
+'Building file: ../src/main2.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main2.o" -I../../task_53_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/main2.d" -MT"src/main2.o" -o "src/main2.o" "../src/main2.c"
+../src/main2.c: In function 'main':
+../src/main2.c:54:13: warning: passing argument 1 of 'xil_printf' makes pointer from integer without a cast [-Wint-conversion]
+  xil_printf(XGpio_DiscreteRead(&GPIO_0, 2));
+             ^
+In file included from c:\xilinx\sdk\2016.4\gnu\microblaze\nt\microblaze-xilinx-elf\include\stdio.h:29:0,
+                 from ../src/main2.c:1:
+c:\xilinx\sdk\2016.4\gnu\microblaze\nt\microblaze-xilinx-elf\include\stdio.h:221:9: note: expected 'const char *' but argument is of type 'u32 {aka long unsigned int}'
+ void    _EXFUN(xil_printf, (const char*, ...));
+         ^
+../src/main2.c:18:6: warning: unused variable 'array' [-Wunused-variable]
+  int array[]={0x13b, 0x1c5, 0x251, 0x267, 0x286, 0x2b7, 0x2a9, 0x29a, 0x26c,
+      ^
+../src/main2.c:15:6: warning: variable 'word' set but not used [-Wunused-but-set-variable]
+  int word = 0x00000000;
+      ^
+../src/main2.c:14:6: warning: unused variable 'number_words' [-Wunused-variable]
+  int number_words = 100;
+      ^
+'Finished building: ../src/main2.c'
+' '
+'Building target: task_53.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../task_53_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -o "task_53.elf"  ./src/main.o ./src/main2.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: task_53.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size task_53.elf  |tee "task_53.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   8064	    296	   3152	  11512	   2cf8	task_53.elf
+'Finished building: task_53.elf.size'
+' '
+07:43:27 **** Incremental Build of configuration Debug for project task_53 ****
+make all 
+make: Nada a ser feito para `all'.
+07:43:48 **** Auto Build of configuration Debug for project task_53 ****
+make all 
+'Building file: ../src/main2.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main2.o" -I../../task_53_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/main2.d" -MT"src/main2.o" -o "src/main2.o" "../src/main2.c"
+../src/main2.c: In function 'main':
+../src/main2.c:54:13: warning: passing argument 1 of 'xil_printf' makes pointer from integer without a cast [-Wint-conversion]
+  xil_printf(XGpio_DiscreteRead(&GPIO_0, 2));
+             ^
+In file included from c:\xilinx\sdk\2016.4\gnu\microblaze\nt\microblaze-xilinx-elf\include\stdio.h:29:0,
+                 from ../src/main2.c:1:
+c:\xilinx\sdk\2016.4\gnu\microblaze\nt\microblaze-xilinx-elf\include\stdio.h:221:9: note: expected 'const char *' but argument is of type 'u32 {aka long unsigned int}'
+ void    _EXFUN(xil_printf, (const char*, ...));
+         ^
+'Finished building: ../src/main2.c'
+' '
+'Building target: task_53.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../task_53_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -o "task_53.elf"  ./src/main.o ./src/main2.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: task_53.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size task_53.elf  |tee "task_53.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   8516	    296	   3156	  11968	   2ec0	task_53.elf
+'Finished building: task_53.elf.size'
+' '
+07:43:56 **** Incremental Build of configuration Debug for project task_53 ****
+make all 
+make: Nada a ser feito para `all'.
+07:44:09 **** Incremental Build of configuration Debug for project task_53 ****
+make all 
+make: Nada a ser feito para `all'.
+07:45:37 **** Incremental Build of configuration Debug for project task_53 ****
+make all 
+make: Nada a ser feito para `all'.
+07:46:08 **** Incremental Build of configuration Debug for project task_53 ****
+make all 
+make: Nada a ser feito para `all'.
+07:46:11 **** Auto Build of configuration Debug for project task_53 ****
+make all 
+'Building file: ../src/main2.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main2.o" -I../../task_53_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/main2.d" -MT"src/main2.o" -o "src/main2.o" "../src/main2.c"
+../src/main2.c: In function 'main':
+../src/main2.c:55:13: warning: passing argument 1 of 'xil_printf' makes pointer from integer without a cast [-Wint-conversion]
+  xil_printf(XGpio_DiscreteRead(&GPIO_0, 2));
+             ^
+In file included from c:\xilinx\sdk\2016.4\gnu\microblaze\nt\microblaze-xilinx-elf\include\stdio.h:29:0,
+                 from ../src/main2.c:1:
+c:\xilinx\sdk\2016.4\gnu\microblaze\nt\microblaze-xilinx-elf\include\stdio.h:221:9: note: expected 'const char *' but argument is of type 'u32 {aka long unsigned int}'
+ void    _EXFUN(xil_printf, (const char*, ...));
+         ^
+'Finished building: ../src/main2.c'
+' '
+'Building target: task_53.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../task_53_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -o "task_53.elf"  ./src/main.o ./src/main2.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: task_53.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size task_53.elf  |tee "task_53.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   8520	    296	   3152	  11968	   2ec0	task_53.elf
+'Finished building: task_53.elf.size'
+' '
+07:46:17 **** Incremental Build of configuration Debug for project task_53 ****
+make all 
+make: Nada a ser feito para `all'.
+07:46:42 **** Incremental Build of configuration Debug for project task_53 ****
+make all 
+make: Nada a ser feito para `all'.
+07:46:47 **** Auto Build of configuration Debug for project task_53 ****
+make all 
+'Building file: ../src/main2.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main2.o" -I../../task_53_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/main2.d" -MT"src/main2.o" -o "src/main2.o" "../src/main2.c"
+../src/main2.c: In function 'main':
+../src/main2.c:55:8: warning: passing argument 1 of 'print' makes pointer from integer without a cast [-Wint-conversion]
+  print(XGpio_DiscreteRead(&GPIO_0, 2));
+        ^
+In file included from c:\xilinx\sdk\2016.4\gnu\microblaze\nt\microblaze-xilinx-elf\include\stdio.h:29:0,
+                 from ../src/main2.c:1:
+c:\xilinx\sdk\2016.4\gnu\microblaze\nt\microblaze-xilinx-elf\include\stdio.h:223:9: note: expected 'const char *' but argument is of type 'u32 {aka long unsigned int}'
+ void    _EXFUN(print, (const char* ));
+         ^
+'Finished building: ../src/main2.c'
+' '
+'Building target: task_53.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../task_53_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -o "task_53.elf"  ./src/main.o ./src/main2.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: task_53.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size task_53.elf  |tee "task_53.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   8520	    296	   3152	  11968	   2ec0	task_53.elf
+'Finished building: task_53.elf.size'
+' '
+07:47:10 **** Auto Build of configuration Debug for project task_53 ****
+make all 
+'Building file: ../src/main2.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main2.o" -I../../task_53_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/main2.d" -MT"src/main2.o" -o "src/main2.o" "../src/main2.c"
+'Finished building: ../src/main2.c'
+' '
+'Building target: task_53.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../task_53_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -o "task_53.elf"  ./src/main.o ./src/main2.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+c:/xilinx/sdk/2016.4/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/5.2.0/../../../../microblaze-xilinx-elf/lib/le/crtinit.o: In function `_crtinit':
+(.text+0x78): undefined reference to `main'
+collect2.exe: error: ld returned 1 exit status
+make: ** [task_53.elf] Erro 1
+07:47:21 **** Auto Build of configuration Debug for project task_53 ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../task_53_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:40:2: warning: 'MB_Sleep' is deprecated [-Wdeprecated-declarations]
+  MB_Sleep(10);
+  ^
+In file included from ../src/main.c:5:0:
+../../task_53_bsp/microblaze_0/include/microblaze_sleep.h:74:6: note: declared here
+ void MB_Sleep(u32 MilliSeconds) __attribute__((__deprecated__));
+      ^
+../src/main.c:45:2: warning: 'MB_Sleep' is deprecated [-Wdeprecated-declarations]
+  MB_Sleep(10);
+  ^
+In file included from ../src/main.c:5:0:
+../../task_53_bsp/microblaze_0/include/microblaze_sleep.h:74:6: note: declared here
+ void MB_Sleep(u32 MilliSeconds) __attribute__((__deprecated__));
+      ^
+'Finished building: ../src/main.c'
+' '
+'Building target: task_53.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../task_53_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -o "task_53.elf"  ./src/main.o ./src/main2.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: task_53.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size task_53.elf  |tee "task_53.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   6776	    292	   3156	  10224	   27f0	task_53.elf
+'Finished building: task_53.elf.size'
+' '
+07:48:04 **** Auto Build of configuration Debug for project task_53 ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../task_53_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:40:2: warning: 'MB_Sleep' is deprecated [-Wdeprecated-declarations]
+  MB_Sleep(10);
+  ^
+In file included from ../src/main.c:5:0:
+../../task_53_bsp/microblaze_0/include/microblaze_sleep.h:74:6: note: declared here
+ void MB_Sleep(u32 MilliSeconds) __attribute__((__deprecated__));
+      ^
+../src/main.c:45:2: warning: 'MB_Sleep' is deprecated [-Wdeprecated-declarations]
+  MB_Sleep(10);
+  ^
+In file included from ../src/main.c:5:0:
+../../task_53_bsp/microblaze_0/include/microblaze_sleep.h:74:6: note: declared here
+ void MB_Sleep(u32 MilliSeconds) __attribute__((__deprecated__));
+      ^
+'Finished building: ../src/main.c'
+' '
+'Building target: task_53.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../task_53_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -o "task_53.elf"  ./src/main.o ./src/main2.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: task_53.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size task_53.elf  |tee "task_53.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   6700	    292	   3160	  10152	   27a8	task_53.elf
+'Finished building: task_53.elf.size'
+' '
+07:48:06 **** Incremental Build of configuration Debug for project task_53 ****
+make all 
+make: Nada a ser feito para `all'.
+07:48:13 **** Incremental Build of configuration Debug for project task_53 ****
+make all 
+make: Nada a ser feito para `all'.
+07:48:17 **** Incremental Build of configuration Debug for project task_53 ****
+make all 
+make: Nada a ser feito para `all'.
+07:48:25 **** Incremental Build of configuration Debug for project task_53 ****
+make all 
+make: Nada a ser feito para `all'.
+07:49:50 **** Incremental Build of configuration Debug for project task_53 ****
+make all 
+make: Nada a ser feito para `all'.
+07:50:22 **** Incremental Build of configuration Debug for project task_53 ****
+make all 
+make: Nada a ser feito para `all'.
+07:52:16 **** Auto Build of configuration Debug for project task_53 ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../task_53_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:40:2: warning: 'MB_Sleep' is deprecated [-Wdeprecated-declarations]
+  MB_Sleep(10);
+  ^
+In file included from ../src/main.c:5:0:
+../../task_53_bsp/microblaze_0/include/microblaze_sleep.h:74:6: note: declared here
+ void MB_Sleep(u32 MilliSeconds) __attribute__((__deprecated__));
+      ^
+../src/main.c:45:2: warning: 'MB_Sleep' is deprecated [-Wdeprecated-declarations]
+  MB_Sleep(10);
+  ^
+In file included from ../src/main.c:5:0:
+../../task_53_bsp/microblaze_0/include/microblaze_sleep.h:74:6: note: declared here
+ void MB_Sleep(u32 MilliSeconds) __attribute__((__deprecated__));
+      ^
+'Finished building: ../src/main.c'
+' '
+'Building target: task_53.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../task_53_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -o "task_53.elf"  ./src/main.o ./src/main2.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: task_53.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size task_53.elf  |tee "task_53.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   6776	    292	   3156	  10224	   27f0	task_53.elf
+'Finished building: task_53.elf.size'
+' '
+14:54:01 **** Clean-only build of project task_53_bsp ****
+make -k clean 
+rm -f microblaze_0/lib/libxil.a
+14:54:01 **** Clean-only build of configuration Debug for project task_53 ****
+make clean 
+rm -rf  ./src/main.o ./src/main2.o ./src/platform.o  ./src/main.d ./src/main2.d ./src/platform.d  task_53.elf.size  task_53.elf
+' '
+14:54:02 **** Build of project task_53_bsp ****
+make -k all 
+"Running Make include in microblaze_0/libsrc/bram_v4_1/src"
+make -C microblaze_0/libsrc/bram_v4_1/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in microblaze_0/libsrc/cpu_v2_5/src"
+make -C microblaze_0/libsrc/cpu_v2_5/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in microblaze_0/libsrc/gpio_v4_3/src"
+make -C microblaze_0/libsrc/gpio_v4_3/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in microblaze_0/libsrc/standalone_v6_1/src"
+make -C microblaze_0/libsrc/standalone_v6_1/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in microblaze_0/libsrc/uartlite_v3_2/src"
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make libs in microblaze_0/libsrc/bram_v4_1/src"
+make -C microblaze_0/libsrc/bram_v4_1/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling bram"
+mb-ar: creating ../../../lib/libxil.a
+"Running Make libs in microblaze_0/libsrc/cpu_v2_5/src"
+make -C microblaze_0/libsrc/cpu_v2_5/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling cpu"
+"Running Make libs in microblaze_0/libsrc/gpio_v4_3/src"
+make -C microblaze_0/libsrc/gpio_v4_3/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling gpio"
+"Running Make libs in microblaze_0/libsrc/standalone_v6_1/src"
+make -C microblaze_0/libsrc/standalone_v6_1/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling standalone";
+"Running Make libs in microblaze_0/libsrc/uartlite_v3_2/src"
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling uartlite"
+'Finished building libraries'
+14:54:10 **** Build of configuration Debug for project task_53 ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../task_53_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:40:2: warning: 'MB_Sleep' is deprecated [-Wdeprecated-declarations]
+  MB_Sleep(10);
+  ^
+In file included from ../src/main.c:5:0:
+../../task_53_bsp/microblaze_0/include/microblaze_sleep.h:74:6: note: declared here
+ void MB_Sleep(u32 MilliSeconds) __attribute__((__deprecated__));
+      ^
+../src/main.c:45:2: warning: 'MB_Sleep' is deprecated [-Wdeprecated-declarations]
+  MB_Sleep(10);
+  ^
+In file included from ../src/main.c:5:0:
+../../task_53_bsp/microblaze_0/include/microblaze_sleep.h:74:6: note: declared here
+ void MB_Sleep(u32 MilliSeconds) __attribute__((__deprecated__));
+      ^
+'Finished building: ../src/main.c'
+' '
+'Building file: ../src/main2.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main2.o" -I../../task_53_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/main2.d" -MT"src/main2.o" -o "src/main2.o" "../src/main2.c"
+'Finished building: ../src/main2.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -I../../task_53_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: task_53.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../task_53_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -o "task_53.elf"  ./src/main.o ./src/main2.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: task_53.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size task_53.elf  |tee "task_53.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   6776	    292	   3156	  10224	   27f0	task_53.elf
+'Finished building: task_53.elf.size'
+' '
+14:55:40 **** Auto Build of configuration Debug for project task_53 ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../task_53_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:40:2: warning: 'MB_Sleep' is deprecated [-Wdeprecated-declarations]
+  MB_Sleep(10);
+  ^
+In file included from ../src/main.c:5:0:
+../../task_53_bsp/microblaze_0/include/microblaze_sleep.h:74:6: note: declared here
+ void MB_Sleep(u32 MilliSeconds) __attribute__((__deprecated__));
+      ^
+../src/main.c:45:2: warning: 'MB_Sleep' is deprecated [-Wdeprecated-declarations]
+  MB_Sleep(10);
+  ^
+In file included from ../src/main.c:5:0:
+../../task_53_bsp/microblaze_0/include/microblaze_sleep.h:74:6: note: declared here
+ void MB_Sleep(u32 MilliSeconds) __attribute__((__deprecated__));
+      ^
+'Finished building: ../src/main.c'
+' '
+'Building target: task_53.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../task_53_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -o "task_53.elf"  ./src/main.o ./src/main2.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: task_53.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size task_53.elf  |tee "task_53.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   6776	    292	   3156	  10224	   27f0	task_53.elf
+'Finished building: task_53.elf.size'
+' '
+15:16:41 **** Auto Build of configuration Debug for project task_53 ****
+make all 
+'Building file: ../src/main2.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main2.o" -I../../task_53_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/main2.d" -MT"src/main2.o" -o "src/main2.o" "../src/main2.c"
+../src/main2.c: In function 'main':
+../src/main2.c:55:8: warning: passing argument 1 of 'print' makes pointer from integer without a cast [-Wint-conversion]
+  print(XGpio_DiscreteRead(&GPIO_0, 2));
+        ^
+In file included from c:\xilinx\sdk\2016.4\gnu\microblaze\nt\microblaze-xilinx-elf\include\stdio.h:29:0,
+                 from ../src/main2.c:1:
+c:\xilinx\sdk\2016.4\gnu\microblaze\nt\microblaze-xilinx-elf\include\stdio.h:223:9: note: expected 'const char *' but argument is of type 'u32 {aka long unsigned int}'
+ void    _EXFUN(print, (const char* ));
+         ^
+'Finished building: ../src/main2.c'
+' '
+'Building target: task_53.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../task_53_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -o "task_53.elf"  ./src/main.o ./src/main2.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+./src/main2.o: In function `main':
+C:\CR\Projeto\Task_53\Task_53.sdk\task_53\Debug/../src/main2.c:13: multiple definition of `main'
+./src/main.o:C:\CR\Projeto\Task_53\Task_53.sdk\task_53\Debug/../src/main.c:16: first defined here
+collect2.exe: error: ld returned 1 exit status
+make: ** [task_53.elf] Erro 1
+15:16:52 **** Auto Build of configuration Debug for project task_53 ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../task_53_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: task_53.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../task_53_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -o "task_53.elf"  ./src/main.o ./src/main2.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: task_53.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size task_53.elf  |tee "task_53.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   8516	    296	   3156	  11968	   2ec0	task_53.elf
+'Finished building: task_53.elf.size'
+' '
+15:17:31 **** Incremental Build of configuration Debug for project task_53 ****
+make all 
+make: Nada a ser feito para `all'.
+15:32:52 **** Incremental Build of configuration Debug for project task_53 ****
+make all 
+make: Nada a ser feito para `all'.
+15:50:00 **** Auto Build of configuration Debug for project task_53 ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../task_53_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:40:2: warning: 'MB_Sleep' is deprecated [-Wdeprecated-declarations]
+  MB_Sleep(10);
+  ^
+In file included from ../src/main.c:5:0:
+../../task_53_bsp/microblaze_0/include/microblaze_sleep.h:74:6: note: declared here
+ void MB_Sleep(u32 MilliSeconds) __attribute__((__deprecated__));
+      ^
+../src/main.c:45:2: warning: 'MB_Sleep' is deprecated [-Wdeprecated-declarations]
+  MB_Sleep(10);
+  ^
+In file included from ../src/main.c:5:0:
+../../task_53_bsp/microblaze_0/include/microblaze_sleep.h:74:6: note: declared here
+ void MB_Sleep(u32 MilliSeconds) __attribute__((__deprecated__));
+      ^
+../src/main.c: At top level:
+../src/main.c:62:3: error: expected identifier or '(' before '/' token
+ }*/
+   ^
+make: ** [src/main.o] Erro 1
